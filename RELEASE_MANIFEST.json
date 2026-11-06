@@ -18,8 +18,8 @@
       "sha256": "1da988b8e8edff4777cb657288655c0c874cea5873b7156063fb3951b557e8f8"
     },
     "README.md": {
-      "bytes": 4790,
-      "sha256": "3459eee1a87ebc9020cf47f9b372cc9fe6b2d44be6da4927b870e1dce1339a00"
+      "bytes": 4788,
+      "sha256": "c1069adf39fbc97e20492a7f46de5a8df9c987d2ce74af3bec4854733b0a782d"
     },
     "configs/orbital_sft/compatibility.yaml": {
       "bytes": 4118,
@@ -182,12 +182,12 @@
       "sha256": "488460811f9390846f8d879852df28d73c07dab4c917f5948a89c8d326c40dac"
     },
     "docs/SCALING.md": {
-      "bytes": 3011,
-      "sha256": "51917afb18e3a0a2f9354c6a67bd72709b1d60c8b5b19da18f0329f0b1d2ca31"
+      "bytes": 3010,
+      "sha256": "4da34b24a7778fb614b75219847d797621aef75bfaef52a39bc5fe6765546f05"
     },
     "docs/SOCIAL.md": {
-      "bytes": 1305,
-      "sha256": "84d4f0f6f19b04cc125eec38f21b47ba37d977b178f490758d31f6faf332141a"
+      "bytes": 1304,
+      "sha256": "a5df0d97142af9fdc278d080faa708f6c35fae98ab9143c70d35f65971bc3a14"
     },
     "docs/THIRD_PARTY.md": {
       "bytes": 1584,

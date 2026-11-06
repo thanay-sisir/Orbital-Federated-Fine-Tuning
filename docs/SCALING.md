@@ -20,4 +20,4 @@ Third, test heterogeneous and changing client data, rare-client participation, c
 
 Finally, repeat on unseen scenarios and representative hardware. Report failure regions and uncertainty as well as successful cases. “Mid-training” should be defined by its actual learning objective and update method; the label does not by itself determine resource requirements.
 
-A defensible future claim would be: **“We measured where communication-aware learning remains useful under a specified spacecraft and constellation budget.”** That claim needs experiments beyond this release.
+A defensible future claim would be: **“I measured where communication-aware learning remains useful under a specified spacecraft and constellation budget.”** That claim needs experiments beyond this release.

@@ -4,7 +4,7 @@ These drafts fit the standard character budget with room for a shortened reposit
 
 ## Post 1
 
-I built Orbital Federated Fine-Tuning: five A100 clients learning from separate data shards under simulated satellite communication limits. The question: how do we keep useful training moving when links disappear?
+I built Orbital Federated Fine-Tuning: five A100 clients learning from separate data shards under simulated satellite communication limits. The question: how do I keep useful training moving when links disappear?
 
 Image: `media/01_orbital_system.png`
 
