@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "missing": [],
+  "controls": {
+    "same_initial_adapters": true,
+    "same_source": true,
+    "same_config_except_policy": true
+  },
+  "conformance_checks": {
+    "no_outage_control": {
+      "matches_cpu_performed_steps": true,
+      "matches_cpu_accepted_steps": true,
+      "matches_cpu_accepted_updates": true,
+      "matches_cpu_wire_bytes": true,
+      "matches_cpu_failed_attempts": true,
+      "matches_per_client_participation": true,
+      "mission_deadline_preserved": true,
+      "declared_configuration": true,
+      "shared_frozen_source": true
+    },
+    "fixed": {
+      "matches_cpu_performed_steps": true,
+      "matches_cpu_accepted_steps": true,
+      "matches_cpu_accepted_updates": true,
+      "matches_cpu_wire_bytes": true,
+      "matches_cpu_failed_attempts": true,
+      "matches_per_client_participation": true,
+      "mission_deadline_preserved": true,
+      "declared_configuration": true,
+      "shared_frozen_source": true
+    },
+    "retry_backoff": {
+      "matches_cpu_performed_steps": true,
+      "matches_cpu_accepted_steps": true,
+      "matches_cpu_accepted_updates": true,
+      "matches_cpu_wire_bytes": true,
+      "matches_cpu_failed_attempts": true,
+      "matches_per_client_participation": true,
+      "mission_deadline_preserved": true,
+      "declared_configuration": true,
+      "shared_frozen_source": true
+    },
+    "feasible_fair": {
+      "matches_cpu_performed_steps": true,
+      "matches_cpu_accepted_steps": true,
+      "matches_cpu_accepted_updates": true,
+      "matches_cpu_wire_bytes": true,
+      "matches_cpu_failed_attempts": true,
+      "matches_per_client_participation": true,
+      "mission_deadline_preserved": true,
+      "declared_configuration": true,
+      "shared_frozen_source": true
+    }
+  },
+  "results": [
+    {
+      "label": "no_outage_control",
+      "run_id": "outages-v1-no_outage_control",
+      "policy": "fixed",
+      "performed_steps": 64,
+      "accepted_steps": 16,
+      "accepted_updates": 4,
+      "wire_bytes": 167897872,
+      "failed_attempts": 0,
+      "accepted_per_client": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "validation_loss": 1.3591090369554708,
+      "wasted_simulated_compute_seconds": 0.0,
+      "observed_outage_events": 0,
+      "initial_sha256": "1a9ca70a27b73372271e37310cd35f700690bdfb39f3ae0dc05d9db11f2eaf4d"
+    },
+    {
+      "label": "fixed",
+      "run_id": "outages-v1-fixed",
+      "policy": "fixed",
+      "performed_steps": 56,
+      "accepted_steps": 8,
+      "accepted_updates": 2,
+      "wire_bytes": 154272818,
+      "failed_attempts": 2,
+      "accepted_per_client": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "validation_loss": 1.3880897260299143,
+      "wasted_simulated_compute_seconds": 0.0,
+      "observed_outage_events": 148,
+      "initial_sha256": "1a9ca70a27b73372271e37310cd35f700690bdfb39f3ae0dc05d9db11f2eaf4d"
+    },
+    {
+      "label": "retry_backoff",
+      "run_id": "outages-v1-retry_backoff",
+      "policy": "retry_backoff",
+      "performed_steps": 56,
+      "accepted_steps": 8,
+      "accepted_updates": 2,
+      "wire_bytes": 154272818,
+      "failed_attempts": 2,
+      "accepted_per_client": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "validation_loss": 1.3880897260299143,
+      "wasted_simulated_compute_seconds": 0.0,
+      "observed_outage_events": 148,
+      "initial_sha256": "1a9ca70a27b73372271e37310cd35f700690bdfb39f3ae0dc05d9db11f2eaf4d"
+    },
+    {
+      "label": "feasible_fair",
+      "run_id": "outages-v1-feasible_fair",
+      "policy": "feasible_fair",
+      "performed_steps": 26,
+      "accepted_steps": 14,
+      "accepted_updates": 4,
+      "wire_bytes": 91807834,
+      "failed_attempts": 1,
+      "accepted_per_client": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "validation_loss": 1.3669272286984695,
+      "wasted_simulated_compute_seconds": 0.0,
+      "observed_outage_events": 148,
+      "initial_sha256": "1a9ca70a27b73372271e37310cd35f700690bdfb39f3ae0dc05d9db11f2eaf4d"
+    }
+  ],
+  "allocated_gpu_hours_excluding_pilot": 5.376388888888889,
+  "scope": "Four actual five-GPU trajectories, one selected synthetic outage scenario and one training seed. CPU counts must match actual work/delivery. No broad quality-win, flight-calibration or replicated quality claim."
+}

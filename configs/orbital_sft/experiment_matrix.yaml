@@ -1,0 +1,12 @@
+schema_version: 1
+status: preregistration_template
+virtual_clients: 5
+primary_physical_gpus: 5
+seeds: [42, 43, 44]
+policies: [connected, fixed, contact_aware]
+partitions: [iid, source_skew]
+matched: [base_revision, initial_adapter, shards, local_steps, optimizer, byte_budget, mission_seconds]
+stages: [10000, 100000]
+primary_outcome: held_out_task_quality_at_fixed_mission_and_byte_budget
+reference_limits: connected is federated with no contact gaps; centralized SFT remains a separate control
+required_before_scaling: [compatibility_passed, masks_reviewed, protocol_tests_passed, task_evaluation_defined]

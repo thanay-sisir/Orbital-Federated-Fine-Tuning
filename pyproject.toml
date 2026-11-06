@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orbital-federated-finetuning"
+version = "0.1.0"
+description = "Five-client federated adapter fine-tuning under simulated orbital communication constraints"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pydantic==2.14.2", "PyYAML==6.0.3"]
+
+[project.scripts]
+orbital-sft = "swarmshield.orbital.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/swarmshield"]

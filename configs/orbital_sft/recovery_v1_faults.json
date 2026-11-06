@@ -1,0 +1,13 @@
+[
+  {
+    "stage": "after_chunk",
+    "round": 0,
+    "client": 0,
+    "chunk": 0,
+    "direction": "upload"
+  },
+  {
+    "stage": "after_round_commit",
+    "round": 0
+  }
+]

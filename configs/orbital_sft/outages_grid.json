@@ -1,0 +1,104 @@
+{
+  "study": "mission-time-outages-v1",
+  "selection_rule": "Only fixed/no-outage outcomes; retention [0.2,0.8], >=8 accepted steps, >=1 failed attempt, closest to 0.5 then case ID. No candidate outcomes or model quality used.",
+  "geometries": {
+    "altitude_km": [
+      450,
+      550,
+      700
+    ],
+    "ground_station_counts": [
+      1,
+      2
+    ],
+    "inclination_deg": 53,
+    "mission_seconds": 86400,
+    "stations": [
+      {
+        "name": "hypothetical-virginia",
+        "latitude": 38.03,
+        "longitude": -78.5,
+        "elevation_m": 200
+      },
+      {
+        "name": "hypothetical-west-ground",
+        "latitude": 34.0,
+        "longitude": -118.0,
+        "elevation_m": 100
+      }
+    ]
+  },
+  "fault_seeds": [
+    101,
+    102,
+    103
+  ],
+  "profiles": {
+    "none": {
+      "events_per_client_link": 0,
+      "events_per_client_power": 0,
+      "events_per_station": 0
+    },
+    "low": {
+      "events_per_client_link": 12,
+      "events_per_client_power": 2,
+      "events_per_station": 4
+    },
+    "high": {
+      "events_per_client_link": 48,
+      "events_per_client_power": 8,
+      "events_per_station": 16
+    }
+  },
+  "duration_ranges_seconds": {
+    "link": [
+      20,
+      120
+    ],
+    "client": [
+      120,
+      900
+    ],
+    "station": [
+      300,
+      1200
+    ]
+  },
+  "rates_bps": [
+    256000,
+    1000000
+  ],
+  "compute_seconds_per_step": [
+    30,
+    60
+  ],
+  "policies": [
+    "fixed",
+    "retry_backoff",
+    "feasible_fair"
+  ],
+  "cpu_trajectories": 648,
+  "gpu_confirmation": {
+    "conditions": [
+      "no_outage_control",
+      "fixed",
+      "retry_backoff",
+      "feasible_fair"
+    ],
+    "training_seed": 42,
+    "gpus_per_task": 5,
+    "maximum_parallel_tasks": 1,
+    "task_hours_limit": 1,
+    "maximum_array_gpu_hours": 20
+  },
+  "assumptions": "Synthetic outage rates, constant radio and compute profiles; not measured spacecraft reliability. Energy is a posthoc sensitivity calculation; no battery/thermal or energy-aware admission claim.",
+  "script_sha256": {
+    "src/swarmshield/orbital/outages.py": "02f01a01e49d8bc36573cffc2a5d9a3c1143fa27d0c5c0fd5732d93195c31cb9",
+    "src/swarmshield/orbital/resilient_mission.py": "a1881f7048205e3dc0ce7e67f174ffc31c0737466e7fe29f455d520e7eaa3ac7",
+    "scripts/orbital_outages_cpu.py": "de24813322f638d0df84b65d892dd3029447c2ab4f540c1cafef1560285323bd",
+    "scripts/orbital_outages_report.py": "294a9101d76bd4c65e388210802c561a330f8c30197ee25f05028ef3bdf490a5",
+    "scripts/orbital_outages_plots.py": "2a55859cd9293f01a31dd9f60b5c074a5124c2ef9630fae30240ee5427896af9"
+  },
+  "geometry_correction": "Initial CPU attempt 22494720 rejected a trace because the legacy hypothetical Norway station had no contact windows. Original artifacts/configurations preserved. New second site is synthetic and within the tested inclination range.",
+  "boundary_ordering": "At each timestamp, completions and outage observations are processed before any new admission, chunk or compute step. Added an explicit start-of-round outage regression test before GPU confirmation."
+}

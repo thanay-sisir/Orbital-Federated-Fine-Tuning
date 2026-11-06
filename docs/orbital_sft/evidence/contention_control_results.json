@@ -1,0 +1,138 @@
+{
+  "status": "passed",
+  "checks": {
+    "contact_protocol_checks": true,
+    "source_matches_trusted_manifests": true,
+    "no_outages_in_control": true,
+    "one_shared_station": true,
+    "actual_competing_nominal_clients": true,
+    "every_stored_chunk_matches_original_bytes_and_hash": true,
+    "multiple_clients_completed_payload_transactions": true,
+    "client-0:predicted_verified_positions": true,
+    "client-0:predicted_verified_payload_bytes": true,
+    "client-0:payload_transactions_match_storage": true,
+    "client-1:predicted_verified_positions": true,
+    "client-1:predicted_verified_payload_bytes": true,
+    "client-1:payload_transactions_match_storage": true,
+    "client-2:predicted_verified_positions": true,
+    "client-2:predicted_verified_payload_bytes": true,
+    "client-2:payload_transactions_match_storage": true,
+    "client-3:predicted_verified_positions": true,
+    "client-3:predicted_verified_payload_bytes": true,
+    "client-3:payload_transactions_match_storage": true,
+    "client-4:predicted_verified_positions": true,
+    "client-4:predicted_verified_payload_bytes": true,
+    "client-4:payload_transactions_match_storage": true,
+    "minimum_clients_with_verified_payload": true,
+    "same_nominal_contacts_as_previous_stress": true,
+    "same_nominal_slots_as_previous_stress": true,
+    "same_payload_as_previous_stress": true,
+    "same_radio_and_storage_settings": true
+  },
+  "payload_validation": {
+    "status": "passed",
+    "checks": {
+      "source_matches_trusted_manifests": true,
+      "no_outages_in_control": true,
+      "one_shared_station": true,
+      "actual_competing_nominal_clients": true,
+      "every_stored_chunk_matches_original_bytes_and_hash": true,
+      "multiple_clients_completed_payload_transactions": true,
+      "client-0:predicted_verified_positions": true,
+      "client-0:predicted_verified_payload_bytes": true,
+      "client-0:payload_transactions_match_storage": true,
+      "client-1:predicted_verified_positions": true,
+      "client-1:predicted_verified_payload_bytes": true,
+      "client-1:payload_transactions_match_storage": true,
+      "client-2:predicted_verified_positions": true,
+      "client-2:predicted_verified_payload_bytes": true,
+      "client-2:payload_transactions_match_storage": true,
+      "client-3:predicted_verified_positions": true,
+      "client-3:predicted_verified_payload_bytes": true,
+      "client-3:payload_transactions_match_storage": true,
+      "client-4:predicted_verified_positions": true,
+      "client-4:predicted_verified_payload_bytes": true,
+      "client-4:payload_transactions_match_storage": true,
+      "minimum_clients_with_verified_payload": true
+    },
+    "clients": [
+      {
+        "client": 0,
+        "predicted_verified_chunks": 2,
+        "measured_verified_chunks": 2,
+        "predicted_verified_payload_bytes": 1048576,
+        "measured_verified_payload_bytes": 1048576,
+        "completed_payload_transactions": 2
+      },
+      {
+        "client": 1,
+        "predicted_verified_chunks": 2,
+        "measured_verified_chunks": 2,
+        "predicted_verified_payload_bytes": 1048576,
+        "measured_verified_payload_bytes": 1048576,
+        "completed_payload_transactions": 2
+      },
+      {
+        "client": 2,
+        "predicted_verified_chunks": 2,
+        "measured_verified_chunks": 2,
+        "predicted_verified_payload_bytes": 1048576,
+        "measured_verified_payload_bytes": 1048576,
+        "completed_payload_transactions": 2
+      },
+      {
+        "client": 3,
+        "predicted_verified_chunks": 2,
+        "measured_verified_chunks": 2,
+        "predicted_verified_payload_bytes": 1048576,
+        "measured_verified_payload_bytes": 1048576,
+        "completed_payload_transactions": 2
+      },
+      {
+        "client": 4,
+        "predicted_verified_chunks": 1,
+        "measured_verified_chunks": 1,
+        "predicted_verified_payload_bytes": 524288,
+        "measured_verified_payload_bytes": 524288,
+        "completed_payload_transactions": 1
+      }
+    ],
+    "minimum_clients": 5,
+    "minimum_bytes_per_client": 524288,
+    "clients_meeting_payload_threshold": 5,
+    "total_verified_payload_bytes": 4718592,
+    "jain_verified_byte_share": 0.9529411764705882,
+    "scope": "Read-only verification of actual stored adapter chunks and completed put transactions; status traffic cannot satisfy payload thresholds. Partial chunks are not accepted full updates."
+  },
+  "case_checks": 94,
+  "eligibility": [
+    {
+      "client": 0,
+      "eligible": false
+    },
+    {
+      "client": 1,
+      "eligible": false
+    },
+    {
+      "client": 2,
+      "eligible": false
+    },
+    {
+      "client": 3,
+      "eligible": false
+    },
+    {
+      "client": 4,
+      "eligible": false
+    }
+  ],
+  "reference_execution": "results/orbital/contact-transport-22525257/case-9/execution",
+  "limitations": [
+    "One-host TCP replay with cloned co-visible windows; no independently propagated co-visible constellation.",
+    "Five clients replay the same archived adapter. This experiment performs no new training or aggregation.",
+    "The short shared-station budget tests partial-payload progress, not complete adapter delivery.",
+    "Rate, TDMA processing guard and 360:1 mission-time compression match the preceding study; they are not calibrated flight parameters.",
+    "The Jain index describes byte shares in this one fixed schedule; it does not establish fairness optimality."
+  ]
+}

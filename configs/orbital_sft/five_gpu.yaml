@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "model": {
+    "identity": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "tokenizer_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "path": "artifacts/model",
+    "loader": "AutoModelForMultimodalLM",
+    "target_modules": [
+      "model.language_model.layers.11.self_attn.q_proj",
+      "model.language_model.layers.11.self_attn.v_proj",
+      "model.language_model.layers.15.self_attn.q_proj",
+      "model.language_model.layers.15.self_attn.v_proj",
+      "model.language_model.layers.19.self_attn.q_proj",
+      "model.language_model.layers.19.self_attn.v_proj",
+      "model.language_model.layers.23.self_attn.q_proj",
+      "model.language_model.layers.23.self_attn.v_proj",
+      "model.language_model.layers.27.self_attn.q_proj",
+      "model.language_model.layers.27.self_attn.v_proj",
+      "model.language_model.layers.3.self_attn.q_proj",
+      "model.language_model.layers.3.self_attn.v_proj",
+      "model.language_model.layers.31.self_attn.q_proj",
+      "model.language_model.layers.31.self_attn.v_proj",
+      "model.language_model.layers.35.self_attn.q_proj",
+      "model.language_model.layers.35.self_attn.v_proj",
+      "model.language_model.layers.39.self_attn.q_proj",
+      "model.language_model.layers.39.self_attn.v_proj",
+      "model.language_model.layers.43.self_attn.q_proj",
+      "model.language_model.layers.43.self_attn.v_proj",
+      "model.language_model.layers.47.self_attn.q_proj",
+      "model.language_model.layers.47.self_attn.v_proj",
+      "model.language_model.layers.51.self_attn.q_proj",
+      "model.language_model.layers.51.self_attn.v_proj",
+      "model.language_model.layers.55.self_attn.q_proj",
+      "model.language_model.layers.55.self_attn.v_proj",
+      "model.language_model.layers.59.self_attn.q_proj",
+      "model.language_model.layers.59.self_attn.v_proj",
+      "model.language_model.layers.63.self_attn.q_proj",
+      "model.language_model.layers.63.self_attn.v_proj",
+      "model.language_model.layers.7.self_attn.q_proj",
+      "model.language_model.layers.7.self_attn.v_proj"
+    ],
+    "rank": 8,
+    "alpha": 16,
+    "quantization": "nf4",
+    "dtype": "bfloat16",
+    "factor_policy": "fixed_A_train_B"
+  },
+  "data": {
+    "identity": "allenai/tulu-3-sft-mixture",
+    "revision": "b14afda60f1bbebe55d5d2fa1e4df5042f97f8be",
+    "raw_path": "artifacts/raw/tulu.jsonl",
+    "prepared_path": "artifacts/prepared/pilot",
+    "source_terms": {
+      "ai2-adapt-dev/oasst1_converted": "Apache-2.0; Tulu collection ODC-BY-1.0 attribution"
+    },
+    "licence_review": "docs/orbital_sft/DATA_TERMS.md",
+    "max_examples": 10000,
+    "max_length": 1024,
+    "validation_fraction": 0.05,
+    "test_fraction": 0.05,
+    "partition": "source_skew",
+    "thinking": false,
+    "truncation": "drop"
+  },
+  "training": {
+    "clients": 5,
+    "workers": 5,
+    "rounds": 3,
+    "local_steps": 4,
+    "accumulation": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "grad_clip": 1.0,
+    "optimizer_reset": "each_round",
+    "schedule": "constant",
+    "device_step_seconds": 60.0,
+    "device_profile": "UNCALIBRATED sensitivity assumption: 60 simulated seconds per optimizer step",
+    "compatibility_run": "results/orbital/compatibility-pilot-2",
+    "reload_tolerance": 0.001
+  },
+  "orbit": {
+    "epoch": "2026-11-02T00:00:00+00:00",
+    "altitude_km": 550,
+    "inclination_deg": 53,
+    "planes": 2,
+    "mission_seconds": 86400,
+    "elevation_deg": 10,
+    "stations": [
+      {
+        "name": "hypothetical-virginia",
+        "latitude": 38.03,
+        "longitude": -78.5,
+        "elevation_m": 200
+      },
+      {
+        "name": "hypothetical-norway",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "elevation_m": 20
+      }
+    ]
+  },
+  "network": {
+    "rate_bps": 10000000,
+    "chunk_bytes": 1048576,
+    "framing_bytes": 64,
+    "ack_bytes": 32,
+    "acquisition_seconds": 1,
+    "queue_bytes": 1073741824,
+    "byte_budget": 100000000000,
+    "policy": "fixed",
+    "round_seconds": 14400,
+    "min_participants": 2
+  }
+}

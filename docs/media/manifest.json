@@ -1,0 +1,13 @@
+{
+  "metrics_sha256": "10c2005d7de7f27d9060ad9c927fe67474ceb37ba362913e449f0a01cb455acf",
+  "files": {
+    "docs/media/01_orbital_system.png": "f44485469a0e293ae267849b9208e221f85d43e17fdce9e07203957bc2514829",
+    "docs/media/01_orbital_system.svg": "e62a0c47daf26f0c035a93706582dd64c729acdb6df1961fb20076cde95b0113",
+    "docs/media/02_outage_results.png": "76d398273106c9012f48eb6cee39451b5c2a1a7109797c1e7c83a2b79ebc313f",
+    "docs/media/02_outage_results.svg": "97b52b1a6f54a5252ab7372a42c47da6d2cb0915114e285b5bf6af992b181d36",
+    "docs/media/03_quality_tradeoffs.png": "718fdd30559e94ada2069c713b3766ab4831c2ec8c19860f99e0f040149eee0b",
+    "docs/media/03_quality_tradeoffs.svg": "0a72c59a57c2b548c6639c6af4df199c1a730ad98e097da34c53988dd3b2aa90",
+    "docs/media/04_recovery_and_transfers.png": "dc6329fcfa5b2e9d008632898ad53dea64f42d842e4fb2928d3e2d88bcc85406",
+    "docs/media/04_recovery_and_transfers.svg": "90332956097f8a4a05160df443f71be4a7ba121ad28b03dd5c1b4a9eb0541e56"
+  }
+}

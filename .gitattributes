@@ -1,0 +1,2 @@
+*.svg -whitespace linguist-generated=true
+*.png binary

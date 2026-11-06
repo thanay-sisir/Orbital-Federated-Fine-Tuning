@@ -1,0 +1,91 @@
+{
+  "data": {
+    "identity": "allenai/tulu-3-sft-mixture",
+    "revision": "b14afda60f1bbebe55d5d2fa1e4df5042f97f8be",
+    "raw_path": "artifacts/raw/tulu.jsonl",
+    "prepared_path": "artifacts/prepared/pilot",
+    "source_terms": {
+      "ai2-adapt-dev/oasst1_converted": "Apache-2.0; Tulu collection ODC-BY-1.0 attribution"
+    },
+    "licence_review": "docs/orbital_sft/DATA_TERMS.md",
+    "max_examples": 10000,
+    "max_length": 1024,
+    "validation_fraction": 0.05,
+    "test_fraction": 0.05,
+    "partition": "source_skew",
+    "thinking": false,
+    "truncation": "drop"
+  },
+  "model": {
+    "identity": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "tokenizer_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "path": "artifacts/model",
+    "loader": "AutoModelForMultimodalLM",
+    "target_modules": [
+      "model.language_model.layers.11.self_attn.q_proj",
+      "model.language_model.layers.11.self_attn.v_proj",
+      "model.language_model.layers.15.self_attn.q_proj",
+      "model.language_model.layers.15.self_attn.v_proj",
+      "model.language_model.layers.19.self_attn.q_proj",
+      "model.language_model.layers.19.self_attn.v_proj",
+      "model.language_model.layers.23.self_attn.q_proj",
+      "model.language_model.layers.23.self_attn.v_proj",
+      "model.language_model.layers.27.self_attn.q_proj",
+      "model.language_model.layers.27.self_attn.v_proj",
+      "model.language_model.layers.3.self_attn.q_proj",
+      "model.language_model.layers.3.self_attn.v_proj",
+      "model.language_model.layers.31.self_attn.q_proj",
+      "model.language_model.layers.31.self_attn.v_proj",
+      "model.language_model.layers.35.self_attn.q_proj",
+      "model.language_model.layers.35.self_attn.v_proj",
+      "model.language_model.layers.39.self_attn.q_proj",
+      "model.language_model.layers.39.self_attn.v_proj",
+      "model.language_model.layers.43.self_attn.q_proj",
+      "model.language_model.layers.43.self_attn.v_proj",
+      "model.language_model.layers.47.self_attn.q_proj",
+      "model.language_model.layers.47.self_attn.v_proj",
+      "model.language_model.layers.51.self_attn.q_proj",
+      "model.language_model.layers.51.self_attn.v_proj",
+      "model.language_model.layers.55.self_attn.q_proj",
+      "model.language_model.layers.55.self_attn.v_proj",
+      "model.language_model.layers.59.self_attn.q_proj",
+      "model.language_model.layers.59.self_attn.v_proj",
+      "model.language_model.layers.63.self_attn.q_proj",
+      "model.language_model.layers.63.self_attn.v_proj",
+      "model.language_model.layers.7.self_attn.q_proj",
+      "model.language_model.layers.7.self_attn.v_proj"
+    ],
+    "rank": 8,
+    "alpha": 16,
+    "quantization": "nf4",
+    "dtype": "bfloat16",
+    "factor_policy": "fixed_A_train_B"
+  },
+  "seed": 42,
+  "clients": 5,
+  "counts": {
+    "accepted": 6925,
+    "overlength": 205,
+    "lost_supervised_tokens": 271132,
+    "duplicate": 1
+  },
+  "licence_review_sha256": "07ffeb0b03807e17835db95d92fd482748db9ab0c3c9ad5ac77ca9040d978ade",
+  "shard_examples": [
+    1244,
+    1244,
+    1244,
+    1244,
+    1240
+  ],
+  "sha256": {
+    "client-0.jsonl": "815da391d162f7a6e22427d61f50a1eaf07abe20afb32664a5a058afb7f2b2b5",
+    "client-1.jsonl": "e0f9b19739e570fbced6891b3b9c9daba004bcb69c47506492b4c4de01a946b0",
+    "client-2.jsonl": "183907d4c97fcbe58d24ce9dee2d1b74c46e2838129c4bc4b3f7d65e592f44d8",
+    "client-3.jsonl": "b296f5ba85b664355edd6764762078b589e8bc5ea306faa725f337d22059bd64",
+    "client-4.jsonl": "0ea1697d64204ce9970c9b93ff4178feb82fc1713bb8ba322bbcc20b737e55fb",
+    "test.jsonl": "391c3c1480a8c43b64e8ebb3e2c8bb1bb68f119243cea5fa57d61cd36616c49e",
+    "validation.jsonl": "8c59a4f3d343d844975c5c8631b53c1f0428f2f22f4c31d7dce1cbca1f9c1820"
+  },
+  "overlap_audit": "Exact conversation dedup before hash splits; external benchmark overlap unknown"
+}

@@ -1,0 +1,805 @@
+{
+  "schema": 1,
+  "repository": "thanay-sisir/Orbital-Federated-Fine-Tuning",
+  "scope": "Focused source and numerical-evidence export. No raw conversations, weights, environments, credentials, run logs or unrelated legacy application. This manifest excludes itself.",
+  "validation": {
+    "tests_passed": 95,
+    "artifact_dependent_tests_skipped": 4,
+    "portable_cpu_demos_passed": 2,
+    "public_figures": 4
+  },
+  "files": {
+    ".gitattributes": {
+      "bytes": 55,
+      "sha256": "4ca6e531fd7aa0c8b3a05bf60060479c1ab0b0af5dacb4d9551fe932b2393b78"
+    },
+    ".gitignore": {
+      "bytes": 219,
+      "sha256": "1da988b8e8edff4777cb657288655c0c874cea5873b7156063fb3951b557e8f8"
+    },
+    "README.md": {
+      "bytes": 8317,
+      "sha256": "b9f507e365f1a9665f6e7037d753198fb2914ffca0dea16e495bed5071e65f6b"
+    },
+    "configs/orbital_sft/compatibility.yaml": {
+      "bytes": 4118,
+      "sha256": "7e430420b2b230c763687512987ac167b04a0b04f541c3ecc828695c70aaa1cc"
+    },
+    "configs/orbital_sft/connected.yaml": {
+      "bytes": 4122,
+      "sha256": "f8932006a2faa6d2d4ba12e70ea0169b15628d391c95e02fec51b0de871e6940"
+    },
+    "configs/orbital_sft/connected_epoch1.yaml": {
+      "bytes": 4245,
+      "sha256": "e31c9c19b615d172fd63821c3d3c024481472303294b22874157a219a883d91f"
+    },
+    "configs/orbital_sft/connected_epoch2.yaml": {
+      "bytes": 4245,
+      "sha256": "474110707359d5af57dff3acf3df040d42023e1206c706723fabd4b44c372c07"
+    },
+    "configs/orbital_sft/contact_aware.yaml": {
+      "bytes": 4126,
+      "sha256": "ea978c5a9d41f2e3ac0e19d5f840a36daffebef5ab6f106b3f7984d6c7611fd5"
+    },
+    "configs/orbital_sft/contact_transport.json": {
+      "bytes": 1909,
+      "sha256": "d275aad94d1537c0f15131805f1a8bfa78048bb41a9b8e290ffa8ca235bac018"
+    },
+    "configs/orbital_sft/contention_control.json": {
+      "bytes": 865,
+      "sha256": "5f69e2289496087bf5553bf194482a8cd1535a0e9db03e172e83318c3f5514c3"
+    },
+    "configs/orbital_sft/epoch2.yaml": {
+      "bytes": 4242,
+      "sha256": "a474e4d30928ee97f03377206e00308d4ee5792cbb79a943d38c0c3a6f7a2a22"
+    },
+    "configs/orbital_sft/experiment_matrix.yaml": {
+      "bytes": 608,
+      "sha256": "6b0411e910141b28b26d14dd1ddfd22e4e93c4fbf560a958d2c076a53a3df843"
+    },
+    "configs/orbital_sft/five_gpu.yaml": {
+      "bytes": 4120,
+      "sha256": "acb2c47ecc8fa0d0dc22ab8e1d44f90ce73dd526175d762eef8618b512cc15cb"
+    },
+    "configs/orbital_sft/five_gpu_one_epoch.yaml": {
+      "bytes": 4156,
+      "sha256": "213e3b7f59f7631973978afe6dd926b47f5f4d73388037c59ab5711a69009f74"
+    },
+    "configs/orbital_sft/mission_case62/connected.yaml": {
+      "bytes": 4125,
+      "sha256": "6a20bfbf4bcd16261bebacef569fca7eb646daedfc93a9a04c72390b00f9c728"
+    },
+    "configs/orbital_sft/mission_case62/feasible_fair.yaml": {
+      "bytes": 4129,
+      "sha256": "c191e1914bb8d6428ef8575855257785109261622a28d37303764987fb32bfc9"
+    },
+    "configs/orbital_sft/mission_case62/fixed.yaml": {
+      "bytes": 4121,
+      "sha256": "f0b56acba8cda7d65c5c16ade8d9435ccc908b43da78ca49220a3f1a5247e470"
+    },
+    "configs/orbital_sft/mission_repeats/seed42_connected.yaml": {
+      "bytes": 4153,
+      "sha256": "147d6d96282eeb7815b52f60ceefb0177eda1e7125d3541ef77b7751ad539f13"
+    },
+    "configs/orbital_sft/mission_repeats/seed42_feasible_fair.yaml": {
+      "bytes": 4157,
+      "sha256": "e5787d015e1dba53c87b7599a97e1cbfe11643a7963dd1f8bc884039d60750b6"
+    },
+    "configs/orbital_sft/mission_repeats/seed42_fixed.yaml": {
+      "bytes": 4149,
+      "sha256": "3d193de26704351d449e233bdfe98d9497bb4fc068b8fd8fa62eb9258355ff93"
+    },
+    "configs/orbital_sft/mission_repeats/seed43_connected.yaml": {
+      "bytes": 4153,
+      "sha256": "fb4fd5df557d4175ba20c06224cb1003fb6eaadb92ea19cdbd95c360c01e1927"
+    },
+    "configs/orbital_sft/mission_repeats/seed43_feasible_fair.yaml": {
+      "bytes": 4157,
+      "sha256": "0b524a76dfd516253fb0f8e926f5ce222b0d45b820f882d96aeb23d0e79d6693"
+    },
+    "configs/orbital_sft/mission_repeats/seed43_fixed.yaml": {
+      "bytes": 4149,
+      "sha256": "f6c0d6457a4512beeb637f6c2c46ed58e183103c585217e297c4a74d45be9152"
+    },
+    "configs/orbital_sft/mission_repeats/seed44_connected.yaml": {
+      "bytes": 4153,
+      "sha256": "cf395816e12662b83e80fa23ea6fe9caeb38a7058e83366690705cf8678868bb"
+    },
+    "configs/orbital_sft/mission_repeats/seed44_feasible_fair.yaml": {
+      "bytes": 4157,
+      "sha256": "2664087397393485773cda7a61f6a91c9c9e2f4f808a29af0ec70b2a29f5b029"
+    },
+    "configs/orbital_sft/mission_repeats/seed44_fixed.yaml": {
+      "bytes": 4149,
+      "sha256": "0fc61f6f7b76fd7eb2855856d6de1bc77d19ad8d0010bc1dad2d1d3e095be390"
+    },
+    "configs/orbital_sft/one_gpu_reference.yaml": {
+      "bytes": 4118,
+      "sha256": "e44ecb736cc2aaa92c5d22e652639d470af90ac30c59315467a05f57956d9675"
+    },
+    "configs/orbital_sft/outages_grid.json": {
+      "bytes": 3099,
+      "sha256": "f70a16a2c738b7f89c4f183997bc860c8bb1775d3dd9a6e514c05cca60f9644a"
+    },
+    "configs/orbital_sft/outages_selection.json": {
+      "bytes": 16525,
+      "sha256": "d6d0845e63bd506905dab8679662c105d210255c053c5d4b8a4396597403cf59"
+    },
+    "configs/orbital_sft/outages_v1/feasible_fair.yaml": {
+      "bytes": 4159,
+      "sha256": "3e8273c456b8ea46dc51f9ed1ad3b67d796b42409e51fd5f53d6cde0da141749"
+    },
+    "configs/orbital_sft/outages_v1/fixed.yaml": {
+      "bytes": 4151,
+      "sha256": "34b7f19f968db5eb3222a1a29453a26f621da4691882fbf5acbe7383bb4a0c97"
+    },
+    "configs/orbital_sft/outages_v1/no_outage_control.yaml": {
+      "bytes": 4151,
+      "sha256": "34b7f19f968db5eb3222a1a29453a26f621da4691882fbf5acbe7383bb4a0c97"
+    },
+    "configs/orbital_sft/outages_v1/pilot.yaml": {
+      "bytes": 4297,
+      "sha256": "0b2074eb3c383d923d7c2dab8fb68f140d9e9f5b4fa3f590bfd85d464d6b39a4"
+    },
+    "configs/orbital_sft/outages_v1/retry_backoff.yaml": {
+      "bytes": 4159,
+      "sha256": "1df24f046761dc5bd6535b4c57fbb3e414121e114bea70b126ebc7caeb81e653"
+    },
+    "configs/orbital_sft/recovery_v1.yaml": {
+      "bytes": 4147,
+      "sha256": "5034122ed00519aa2f3113d010efc07cdbc698dc9b875229a4260004c8a12658"
+    },
+    "configs/orbital_sft/recovery_v1_faults.json": {
+      "bytes": 174,
+      "sha256": "9e75ee8a187d9b0f055557bd7b71f3c5aef8779f9e55b701c341595cb7f6f99c"
+    },
+    "configs/orbital_sft/recovery_v1_pilot.yaml": {
+      "bytes": 4126,
+      "sha256": "99d1b3b3b9523738cfcde51c700f4ea16f4fa894c50602cb21a2fd510075ee33"
+    },
+    "configs/orbital_sft/socket_transport.json": {
+      "bytes": 384,
+      "sha256": "68d4d0647eed6db827840b6a6d0a48dfe8125bd370e0d11d954eed662237432b"
+    },
+    "configs/orbital_sft/two_client_smoke.yaml": {
+      "bytes": 4123,
+      "sha256": "9ca76df9a4e57e94aa85bad7caf4e94a4f466773b8852d985e9dc17c3b2adfbd"
+    },
+    "configs/orbital_sft/two_gpu.yaml": {
+      "bytes": 4118,
+      "sha256": "1ab851018e59f251f01655a6bcf007023a376deeef6d5652f5d10a38cad46a0e"
+    },
+    "docs/EXPERIMENTS.md": {
+      "bytes": 8956,
+      "sha256": "64042b6b984a3270c878f1fa6743f289086ec9c0efc1bb738d40c28e57541091"
+    },
+    "docs/RELEASE_VALIDATION.md": {
+      "bytes": 1720,
+      "sha256": "d792f8266d8d1782e339024072895f5f8b4197e2179fc14e5672166db9727af6"
+    },
+    "docs/REPRODUCE.md": {
+      "bytes": 4962,
+      "sha256": "488460811f9390846f8d879852df28d73c07dab4c917f5948a89c8d326c40dac"
+    },
+    "docs/SCALING.md": {
+      "bytes": 3011,
+      "sha256": "51917afb18e3a0a2f9354c6a67bd72709b1d60c8b5b19da18f0329f0b1d2ca31"
+    },
+    "docs/SOCIAL.md": {
+      "bytes": 1305,
+      "sha256": "84d4f0f6f19b04cc125eec38f21b47ba37d977b178f490758d31f6faf332141a"
+    },
+    "docs/THIRD_PARTY.md": {
+      "bytes": 1584,
+      "sha256": "c63eb0ad9ff202ce1577484d550ac1cd4f1147e976cfc90d5364910e4cedd181"
+    },
+    "docs/media/01_orbital_system.png": {
+      "bytes": 147499,
+      "sha256": "f44485469a0e293ae267849b9208e221f85d43e17fdce9e07203957bc2514829"
+    },
+    "docs/media/01_orbital_system.svg": {
+      "bytes": 109559,
+      "sha256": "e62a0c47daf26f0c035a93706582dd64c729acdb6df1961fb20076cde95b0113"
+    },
+    "docs/media/02_outage_results.png": {
+      "bytes": 108545,
+      "sha256": "76d398273106c9012f48eb6cee39451b5c2a1a7109797c1e7c83a2b79ebc313f"
+    },
+    "docs/media/02_outage_results.svg": {
+      "bytes": 90033,
+      "sha256": "97b52b1a6f54a5252ab7372a42c47da6d2cb0915114e285b5bf6af992b181d36"
+    },
+    "docs/media/03_quality_tradeoffs.png": {
+      "bytes": 115589,
+      "sha256": "718fdd30559e94ada2069c713b3766ab4831c2ec8c19860f99e0f040149eee0b"
+    },
+    "docs/media/03_quality_tradeoffs.svg": {
+      "bytes": 99071,
+      "sha256": "0a72c59a57c2b548c6639c6af4df199c1a730ad98e097da34c53988dd3b2aa90"
+    },
+    "docs/media/04_recovery_and_transfers.png": {
+      "bytes": 142950,
+      "sha256": "dc6329fcfa5b2e9d008632898ad53dea64f42d842e4fb2928d3e2d88bcc85406"
+    },
+    "docs/media/04_recovery_and_transfers.svg": {
+      "bytes": 113303,
+      "sha256": "90332956097f8a4a05160df443f71be4a7ba121ad28b03dd5c1b4a9eb0541e56"
+    },
+    "docs/media/manifest.json": {
+      "bytes": 994,
+      "sha256": "541f5de3d936f4960d2e8c4cb69e528ae3b87b795c275d98388564316fd272ee"
+    },
+    "docs/media/release_metrics.json": {
+      "bytes": 17605,
+      "sha256": "10c2005d7de7f27d9060ad9c927fe67474ceb37ba362913e449f0a01cb455acf"
+    },
+    "docs/orbital_sft/DATA_TERMS.md": {
+      "bytes": 1811,
+      "sha256": "07ffeb0b03807e17835db95d92fd482748db9ab0c3c9ad5ac77ca9040d978ade"
+    },
+    "docs/orbital_sft/evidence/contact_transport_report.md": {
+      "bytes": 2621,
+      "sha256": "a286d8cdbb307ccadde840919556df942c943d4f7f1b70b20fbb4bc0bc951d8b"
+    },
+    "docs/orbital_sft/evidence/contact_transport_summary.json": {
+      "bytes": 33104,
+      "sha256": "21105dea5a34b7517be5f5cad476e30f8e1dc8ee12cb39a706662af59793e6b8"
+    },
+    "docs/orbital_sft/evidence/contention_control_report.md": {
+      "bytes": 1286,
+      "sha256": "075427232e5f8243f220d4be68831c0ae32f939d6723d9bc113d868ba3270e94"
+    },
+    "docs/orbital_sft/evidence/contention_control_results.json": {
+      "bytes": 5468,
+      "sha256": "35071372ff83a41ba67c20ac304547c10b450356ff5709abd4242018fad57f37"
+    },
+    "docs/orbital_sft/evidence/outages_gpu_report.md": {
+      "bytes": 1103,
+      "sha256": "e5f116d0ff90179aa9988d8470c1311ba6a31532e16ac45cbcc21c25a2720d98"
+    },
+    "docs/orbital_sft/evidence/outages_gpu_results.json": {
+      "bytes": 4397,
+      "sha256": "94a345642694b7e649518b002cfb4e779a72c733547cbd536ee1ad2b518244c3"
+    },
+    "docs/orbital_sft/evidence/outages_plot_data.json": {
+      "bytes": 764571,
+      "sha256": "64744e4e77671b45c75828e3690b29ba3ea7c513355efa05fec4d5c67a9d69c2"
+    },
+    "docs/orbital_sft/evidence/plot_data.json": {
+      "bytes": 1274846,
+      "sha256": "c5697655c20231a9ddb280df154e7292e4de0f1aa3d8d77e005daafaa388ae6a"
+    },
+    "docs/orbital_sft/evidence/resilience_gpu_report.md": {
+      "bytes": 1005,
+      "sha256": "4ea962653d8a206ebac91b08e06b5e0be5a9951b2e938a1189f4176390b92815"
+    },
+    "docs/orbital_sft/evidence/resilience_gpu_results.json": {
+      "bytes": 1978,
+      "sha256": "7278f229463561e68a0a000a18289b55d4af8392355f552334d7f11907a71183"
+    },
+    "docs/orbital_sft/evidence/socket_transport_report.md": {
+      "bytes": 2227,
+      "sha256": "d637b04e432aa755cca2213e74ccaaa3f9546623a2496eb2122c954872e1f1c2"
+    },
+    "docs/orbital_sft/evidence/socket_transport_results.json": {
+      "bytes": 12761,
+      "sha256": "d5862945518ef8e2db7082b7d8819c5651459a368562050ef6f6b0ecbbed2270"
+    },
+    "docs/orbital_sft/upstream_snapshot.json": {
+      "bytes": 2026,
+      "sha256": "c4dbd3e7ef3c8297a6cfb1d31f33fe84bc69196b92032a465f1b22256cc48eb4"
+    },
+    "evaluator/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evaluator/orbital_sft/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evaluator/orbital_sft/aggregation_reference.py": {
+      "bytes": 429,
+      "sha256": "bc393a44bc83e94f1c6c469da32d871813c2c3b3c7ac78afdd766d83c7d6086e"
+    },
+    "evaluator/orbital_sft/invariants.py": {
+      "bytes": 1427,
+      "sha256": "964b8f05099e93fa919214d4dab089ef14550bc11e9d8eb5c6dafbe5ea5081b1"
+    },
+    "infra/rivanna/analysis_setup.sbatch": {
+      "bytes": 814,
+      "sha256": "30867589425a9b2eb4c081d84bc599cc2621866b3cfb75b467d8c11b68537ad4"
+    },
+    "infra/rivanna/codec_clients.sbatch": {
+      "bytes": 558,
+      "sha256": "a060be814aa1b446461ece091a8a6e961a249103153690f3efcc60403ad68881"
+    },
+    "infra/rivanna/common.sh": {
+      "bytes": 1352,
+      "sha256": "1b1df8a59be8274f39428b292166ab6b7d41a74b5e2b63450ec068cdc31456e1"
+    },
+    "infra/rivanna/compare.sbatch": {
+      "bytes": 1058,
+      "sha256": "a28a9a5c52b9253c75c4c7480369215114e5e6c3b3fa6e0fe4245779cdf4c685"
+    },
+    "infra/rivanna/compression_probe.sbatch": {
+      "bytes": 558,
+      "sha256": "e53a2b6cd465d4f6fedb04c316b9091afc3e1c4db52c280a0ae4f4678de24c90"
+    },
+    "infra/rivanna/contact_transport.sbatch": {
+      "bytes": 716,
+      "sha256": "a3ee24027a4290370d5d7148b316c3a5db9b11859f829e18ab991ce438ade712"
+    },
+    "infra/rivanna/contact_transport_report.sbatch": {
+      "bytes": 846,
+      "sha256": "76ae084e6aafd4402871a4d757fd67854dd4150d3c5c0f07fc6442b9030495be"
+    },
+    "infra/rivanna/contact_transport_tests.sbatch": {
+      "bytes": 894,
+      "sha256": "14afb23ea8bcb2a16b14b512908d6af837a59803aa3c62dda0cbc7481be03962"
+    },
+    "infra/rivanna/contention_control.sbatch": {
+      "bytes": 1467,
+      "sha256": "fecf102215cf38b7109611415b86f225dadb516fd2bb521a9cc0853b55bbe7dc"
+    },
+    "infra/rivanna/continue_epoch.sbatch": {
+      "bytes": 684,
+      "sha256": "daffce8871496fbde6a5264a547226f2e004f74dd6be5f1b82e5068809ea11b2"
+    },
+    "infra/rivanna/engineering_checks.sbatch": {
+      "bytes": 759,
+      "sha256": "3eb799564ed0eea67883f8bfc2520fbbf4c9672900a57649866722a5a08fe5d8"
+    },
+    "infra/rivanna/environment/requirements-analysis.lock.txt": {
+      "bytes": 343,
+      "sha256": "ad29ce68b0b5880a266d56e9dba27c360a22f810011e0a7c990049a9efcacdeb"
+    },
+    "infra/rivanna/environment/requirements-analysis.txt": {
+      "bytes": 73,
+      "sha256": "88e618727ca58abbdabc1c19a4eebe4b186185888957efa8495e4ee5eaf029d6"
+    },
+    "infra/rivanna/environment/requirements-gpu.txt": {
+      "bytes": 269,
+      "sha256": "31330fc7d725e3e07766b98767410bba51436955d0d5c71fb7684fbc19385bcc"
+    },
+    "infra/rivanna/environment/requirements-ifeval.txt": {
+      "bytes": 66,
+      "sha256": "bc1bb478788eeb201d6595587fd643303aa367fd267fca496f1ae7d8a43acb47"
+    },
+    "infra/rivanna/environment/setup.sh": {
+      "bytes": 925,
+      "sha256": "01f4d0e2981bd6adcb3bdca626a5384d3c409b17e4ace5b041e6981012a8a233"
+    },
+    "infra/rivanna/feasibility.sbatch": {
+      "bytes": 739,
+      "sha256": "0e85ca9268545256977ff26b65d620f25732fdde49ff0d8b6595aef8e55a8d16"
+    },
+    "infra/rivanna/feasibility_report.sbatch": {
+      "bytes": 737,
+      "sha256": "2c523a8241f4c42aaa20cb52a9770d5db902a66ae56ff675726cb7325df3c7fd"
+    },
+    "infra/rivanna/final_evaluate.sbatch": {
+      "bytes": 728,
+      "sha256": "395e3ad0f77fd0623ae106eb6489568574846f0c6fc7fed8da4ab97ae9427886"
+    },
+    "infra/rivanna/geometry_validation.sbatch": {
+      "bytes": 591,
+      "sha256": "6c56d5b90b579b52694acd828f1e322f9f690ad5586adf8f115ef8a5dfb89f8b"
+    },
+    "infra/rivanna/mission_gpu.sbatch": {
+      "bytes": 674,
+      "sha256": "03691ac15232fb5a6bf37c2d997fc739389a34e899a5f11717ba6281b601660b"
+    },
+    "infra/rivanna/mission_gpu_report.sbatch": {
+      "bytes": 553,
+      "sha256": "c017badeba96d072dedde3a940257f7f9a01c2aa23d9edbc843cff1a11481c4c"
+    },
+    "infra/rivanna/mission_repeats.sbatch": {
+      "bytes": 744,
+      "sha256": "2e6eb3e662422141aeff45c5ec7909b2e331fabbc3c749d23753d64c01580e43"
+    },
+    "infra/rivanna/mission_repeats_report.sbatch": {
+      "bytes": 556,
+      "sha256": "8fb2d026621c0873be218c7bf4511a6c97f0f80c9ab871aef48b5b67d6d29021"
+    },
+    "infra/rivanna/outages_cpu.sbatch": {
+      "bytes": 591,
+      "sha256": "e2c3de639f4bcb0d8de34a79bcd51a3353c4d157d05c4ad882aa5c330bb61d35"
+    },
+    "infra/rivanna/outages_geometry.sbatch": {
+      "bytes": 723,
+      "sha256": "392ba2c290856624f57156ea0042e01c4fafa9a87bede633158e9abe579eb85b"
+    },
+    "infra/rivanna/outages_gpu.sbatch": {
+      "bytes": 1161,
+      "sha256": "f9d8444e157717a5503aef2ace7eb295f581b4d062eaa91bddbc887a8b8dfbfc"
+    },
+    "infra/rivanna/outages_plots.sbatch": {
+      "bytes": 585,
+      "sha256": "067a3179b0d714179eadf47ede24329d486badb5f0ea44d0923660c29553effb"
+    },
+    "infra/rivanna/outages_report.sbatch": {
+      "bytes": 661,
+      "sha256": "f5fc85402259094974bc50bb5f36e42884a6b62d1993b7eee35998e7f726d91a"
+    },
+    "infra/rivanna/outages_summary.sbatch": {
+      "bytes": 543,
+      "sha256": "43be6fc19212d3bbf266b89c7d9b7ce2b0ca8d4f747d821749198d992cd128f2"
+    },
+    "infra/rivanna/outages_tests.sbatch": {
+      "bytes": 621,
+      "sha256": "913705d4d3e6b2dcca452671e20d10aa9e0973ec25105b21932ed35d9100a94c"
+    },
+    "infra/rivanna/pilot.sbatch": {
+      "bytes": 601,
+      "sha256": "9f5d8e1f78ec4c5e611e83e4e566781ffe591e13ca3ffe43e6a7fc18d03b109e"
+    },
+    "infra/rivanna/portfolio.sbatch": {
+      "bytes": 1011,
+      "sha256": "b7dc2cd8ad4d1fb87741cf74c0ddbdeccac96a9de10fad0036db782e7e41d9ba"
+    },
+    "infra/rivanna/prepare.sbatch": {
+      "bytes": 525,
+      "sha256": "e4aaf98937996e6c3c6a5008be44cdb9f01817355f740755a63dba89ac86c01e"
+    },
+    "infra/rivanna/protocol_tests.sbatch": {
+      "bytes": 587,
+      "sha256": "1d7bac2bfff6870de09b142518c73696c227ba946b175c52eee6ea969e15ab2e"
+    },
+    "infra/rivanna/reference.sbatch": {
+      "bytes": 605,
+      "sha256": "5e4dc4ada4c9de6d9519d911f04de32ce8344990d162d4696ee1e7edf2128895"
+    },
+    "infra/rivanna/release_assets.sbatch": {
+      "bytes": 589,
+      "sha256": "dae9cea9ac8edfbdc0226e37c1324aa72260bc40acde7b6afd06206bf2151e06"
+    },
+    "infra/rivanna/resilience_cpu.sbatch": {
+      "bytes": 698,
+      "sha256": "c737e0b6181a22e4a4b61c45baee52b35823f60732eb3f256eafcbba05bf5929"
+    },
+    "infra/rivanna/resilience_gpu.sbatch": {
+      "bytes": 1350,
+      "sha256": "46968411ab37c30dc93eab430b9831c479aea036e8577f492d2fb22f94444fa9"
+    },
+    "infra/rivanna/resilience_report.sbatch": {
+      "bytes": 589,
+      "sha256": "9520179c37644f1848afbacad2f1b051c44b832e74f692c58ad89cebec67d3ef"
+    },
+    "infra/rivanna/socket_transport.sbatch": {
+      "bytes": 1178,
+      "sha256": "747b5b1f9f321549c310814420df07d073a63f3c56fb2a86e5d59948db3bc4ab"
+    },
+    "infra/rivanna/study_report.sbatch": {
+      "bytes": 583,
+      "sha256": "f10ec7bc99575625e70c4bcda6650e76f7aa02e6aba45a06afed1e942bb1173b"
+    },
+    "infra/rivanna/study_tests.sbatch": {
+      "bytes": 681,
+      "sha256": "c8cb318b80a2ca51154e2206dd1638d7049ce89ac00c6a5c47430c424c7ba4aa"
+    },
+    "infra/rivanna/sweep.sbatch": {
+      "bytes": 739,
+      "sha256": "90d23ba307590d80a560f18176d55b840d5f8cfbcc1cea8a1df602874e47bd14"
+    },
+    "pyproject.toml": {
+      "bytes": 473,
+      "sha256": "a793fd6377d5ae9a9e8cc65fc55f26707b7ba2d42ac3941f7eccaff74eee629f"
+    },
+    "scripts/orbital_benchmarks_stage.py": {
+      "bytes": 1916,
+      "sha256": "4fae722d674f48a6b07c5eb12e73fbdf2431e92afdf26592e2d15b6ba6070ebc"
+    },
+    "scripts/orbital_codec_clients.py": {
+      "bytes": 2452,
+      "sha256": "1d19efa5c63d92e19dc16a85975445a8a156dd56c20b009fb98f7555a3b87eac"
+    },
+    "scripts/orbital_compare.py": {
+      "bytes": 5003,
+      "sha256": "7c763bd37b5c621f271c0c837533a4ab5b1a5f12ebd114b2a08391fb0b32274b"
+    },
+    "scripts/orbital_compression_probe.py": {
+      "bytes": 2632,
+      "sha256": "9bea94f36bae65c451d44b66f5e734b0cc3901d339e0477c5d5ea330ba1a58a3"
+    },
+    "scripts/orbital_contact_report.py": {
+      "bytes": 13817,
+      "sha256": "8a11708d4a5130cb312850d1e5cc374d33a80e78ae53e09d481495cd543ded72"
+    },
+    "scripts/orbital_contact_transport.py": {
+      "bytes": 1664,
+      "sha256": "21018fafef177044863905268fbd1a85ea8e2e9fbe84fb6d546ad50fe28359d3"
+    },
+    "scripts/orbital_contention_control.py": {
+      "bytes": 5831,
+      "sha256": "3458b754ca71ea230eb78e0ffa8884e1f1dd401d47fcc4ea90c82005f418b983"
+    },
+    "scripts/orbital_contention_plots.py": {
+      "bytes": 4236,
+      "sha256": "4eb4418c3c1d589a423411be6a21d0f59d6ac88a4ca93f0beee46d56b15d85cb"
+    },
+    "scripts/orbital_cpu_demo.py": {
+      "bytes": 3780,
+      "sha256": "1a61fe557ad274bac30ea29aec0b6095aaaddd6e9061b6a2e569911766b861ff"
+    },
+    "scripts/orbital_feasibility_report.py": {
+      "bytes": 5676,
+      "sha256": "4d1dc72fd3f26a3144267bb3984750a826bd0e83d07e7f205b36541d3b288101"
+    },
+    "scripts/orbital_feasibility_sweep.py": {
+      "bytes": 2506,
+      "sha256": "b11189e35a63c252d620a6a3e23c4c0585fe79bb2fbf3c8d11cb9f4bd7d07b6e"
+    },
+    "scripts/orbital_final_evaluate.py": {
+      "bytes": 4888,
+      "sha256": "1b0bf9157c61385c911ff424ebbfd5f88ba3222cf6060adfd293aaba4a3ba366"
+    },
+    "scripts/orbital_ifeval_score.py": {
+      "bytes": 3595,
+      "sha256": "9219cd1c0862b5f13dcc85f1ea70f6eb0854ab85e4e8b14ca203fa40136913ee"
+    },
+    "scripts/orbital_matrix.py": {
+      "bytes": 905,
+      "sha256": "b1884eebdddeec72f1e858d7be5fa3aa43ecad5061476afd61b26bc7263e53cc"
+    },
+    "scripts/orbital_mission_report.py": {
+      "bytes": 5204,
+      "sha256": "d70bc91b5e84dd0598129273d09988e2f3b53bad84c6b47d571522cc766f5707"
+    },
+    "scripts/orbital_outages_cpu.py": {
+      "bytes": 12318,
+      "sha256": "de24813322f638d0df84b65d892dd3029447c2ab4f540c1cafef1560285323bd"
+    },
+    "scripts/orbital_outages_demo.py": {
+      "bytes": 3045,
+      "sha256": "0bf2b3e01243cd9cb7e0114849f28b9b29f52ca8aff0bb0f38cc095f672d0a1e"
+    },
+    "scripts/orbital_outages_plots.py": {
+      "bytes": 11239,
+      "sha256": "2a55859cd9293f01a31dd9f60b5c074a5124c2ef9630fae30240ee5427896af9"
+    },
+    "scripts/orbital_outages_report.py": {
+      "bytes": 6459,
+      "sha256": "c3c4e443ee38a9a9a5d6b64702dbf6140e86b1fbde8a5db51ba0f8cf304303c5"
+    },
+    "scripts/orbital_parallel_analysis.py": {
+      "bytes": 7543,
+      "sha256": "7a9a63ee845d5e475a9439136b67752962f9d794a146559e06f3f7293d9005fa"
+    },
+    "scripts/orbital_portfolio.py": {
+      "bytes": 20232,
+      "sha256": "74c16f48cc569bb8bb26fb5a6ba1866a977715fe11af379ed72120261cdedc25"
+    },
+    "scripts/orbital_recovery_demo.py": {
+      "bytes": 5993,
+      "sha256": "f854d398a40bbe8c7b21c811da7ef02b021fe5b4be6f41d00e8423abda785532"
+    },
+    "scripts/orbital_release_figures.py": {
+      "bytes": 11264,
+      "sha256": "01c5170030d1bd6b8e062b60aafc6fd5a0b1dc98af95bb9137dd3eb36c66446c"
+    },
+    "scripts/orbital_repeat_report.py": {
+      "bytes": 6617,
+      "sha256": "61580ba544784e72a4ec7f7cc1c2c8284e1db9a823a0da26b18dbbaba3e7edaa"
+    },
+    "scripts/orbital_resilience_cpu.py": {
+      "bytes": 9819,
+      "sha256": "5d2b40fc8a02c555443c58b6fe0f6197477d737e8aff68c94396c1f04fde32ad"
+    },
+    "scripts/orbital_resilience_report.py": {
+      "bytes": 6710,
+      "sha256": "6417c89fb8d20c7a2e05ee62f22e7f20ce568c28481813ef7c7c9495fb984db4"
+    },
+    "scripts/orbital_sft": {
+      "bytes": 245,
+      "sha256": "cca972d1aa20562ab0edc7f22bd70ae99ffff329af40c27716e7ed545c95b09e"
+    },
+    "scripts/orbital_socket_demo.py": {
+      "bytes": 1662,
+      "sha256": "f5b0c8176760d80d9ff4cdac320196ce6aa7187f6fe9a6d72d6721cd8b498122"
+    },
+    "scripts/orbital_socket_plots.py": {
+      "bytes": 3377,
+      "sha256": "0431c876f9d6037f13fa85eb926bf8d570c7d9da24404e584fc80ae745039574"
+    },
+    "scripts/orbital_stage.py": {
+      "bytes": 2786,
+      "sha256": "e5de43c810f17072e14311d011b987de932f13a9b7bad2584ff8a8e4185e517b"
+    },
+    "scripts/orbital_study_report.py": {
+      "bytes": 14173,
+      "sha256": "429553834925a6c8ea32f09478d0996d72541220ee570e70441853d602333ec3"
+    },
+    "scripts/orbital_validate_geometry.py": {
+      "bytes": 7398,
+      "sha256": "8184b34bf7669a999565b4998cb1e9f7ed4277a8a5fbbf4583f665fbfe07c62d"
+    },
+    "scripts/orbital_verify_bundle.py": {
+      "bytes": 1796,
+      "sha256": "138784e0f0c75a9a7ec7be537a9cbcd2ddf2b066e8fe7f341a17db5b6ba17496"
+    },
+    "src/swarmshield/__init__.py": {
+      "bytes": 22,
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    "src/swarmshield/orbital/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/swarmshield/orbital/aggregation.py": {
+      "bytes": 2008,
+      "sha256": "00585a9fcf57a049bf7ead85719de87dd51d07ce47c9b1e81af8b8dba8979fe2"
+    },
+    "src/swarmshield/orbital/checkpoint.py": {
+      "bytes": 593,
+      "sha256": "811f0828bcee38f42a1a321b283c6775f4c98f9604a23a64c1c8b6629ccc5887"
+    },
+    "src/swarmshield/orbital/cli.py": {
+      "bytes": 3694,
+      "sha256": "493683cd6b8dc677d07114fd0926e4339fcb0e3c65aed2535ab3cf8b91ddde1c"
+    },
+    "src/swarmshield/orbital/config.py": {
+      "bytes": 8587,
+      "sha256": "c78629f11afc26089f7f748b0e0e7b0055ac9b2d534765a0760b39628843f3fc"
+    },
+    "src/swarmshield/orbital/contact_transport.py": {
+      "bytes": 22882,
+      "sha256": "6d135ea122f562ac4b1c65bd17820ecb6c10b7be3972ce9c0a12dd1089b62d2f"
+    },
+    "src/swarmshield/orbital/contacts.py": {
+      "bytes": 4578,
+      "sha256": "3dae366f3aabb2aa3f6bbd4c986cb992e4772b307a6141d3fc82e736fd9dca09"
+    },
+    "src/swarmshield/orbital/contention_validation.py": {
+      "bytes": 4426,
+      "sha256": "9dc3dfeb131da8b44a2c1d90f74fbbdcce4991453918155f3757b57605443053"
+    },
+    "src/swarmshield/orbital/continuation.py": {
+      "bytes": 1469,
+      "sha256": "08f8498a0e90522b008fcb0557691e218892d4daa875e5c2987d4211bbe4592a"
+    },
+    "src/swarmshield/orbital/events.py": {
+      "bytes": 781,
+      "sha256": "1db6281ed28219e5ce92430b4953cbd7f1c6b69a1b59deb93bc8983de8db25d1"
+    },
+    "src/swarmshield/orbital/feasibility.py": {
+      "bytes": 4885,
+      "sha256": "16967dd28748e7c13667dfc57ac970b6c499ed6222320a05b88cd67742894d22"
+    },
+    "src/swarmshield/orbital/mission_runner.py": {
+      "bytes": 12186,
+      "sha256": "0c4e69edf2822ddd19ac819f194d98e8c800fbccda00a159fe3fa401e3788412"
+    },
+    "src/swarmshield/orbital/network.py": {
+      "bytes": 4016,
+      "sha256": "3a8efac7708255fd2d0d49e2b35c8046df11539d45389252e297fd45875234e9"
+    },
+    "src/swarmshield/orbital/outages.py": {
+      "bytes": 18971,
+      "sha256": "02f01a01e49d8bc36573cffc2a5d9a3c1143fa27d0c5c0fd5732d93195c31cb9"
+    },
+    "src/swarmshield/orbital/quantized_update.py": {
+      "bytes": 2879,
+      "sha256": "409910138861b1352582ff830bf08c9811303fc24950793e6c5c6961077ee5a1"
+    },
+    "src/swarmshield/orbital/recovery_state.py": {
+      "bytes": 5717,
+      "sha256": "83b93cb1a415c81dd0dfa890ed7ee75e9dd91619623ba5943d627e52c1243acf"
+    },
+    "src/swarmshield/orbital/reliable_transfer.py": {
+      "bytes": 9982,
+      "sha256": "825b3b7acd9eb67c0055952cbc4f6c9c0707680a7bc78bf5064172e5bc501264"
+    },
+    "src/swarmshield/orbital/reporting.py": {
+      "bytes": 1085,
+      "sha256": "4760d6b10a89aa62e86fd150ad687ed88ff9f29839cdaa3c03433d217c278424"
+    },
+    "src/swarmshield/orbital/resilient_mission.py": {
+      "bytes": 21854,
+      "sha256": "a1881f7048205e3dc0ce7e67f174ffc31c0737466e7fe29f455d520e7eaa3ac7"
+    },
+    "src/swarmshield/orbital/round_planner.py": {
+      "bytes": 3416,
+      "sha256": "22301d989f23bc843f9acbbf4c4c5b366c3c115ecf73667e6eb2dd0ac25bf755"
+    },
+    "src/swarmshield/orbital/runner.py": {
+      "bytes": 20329,
+      "sha256": "8e2cafcef06ce3b51973e89bb36cf0917b5c94e303cf8a8b10ca38b24ab96c3e"
+    },
+    "src/swarmshield/orbital/socket_transport.py": {
+      "bytes": 29608,
+      "sha256": "d8be52bfb680d1b1253fd75dabcd6ef043975b966e92d59c97888dc60e420f91"
+    },
+    "src/swarmshield/posttraining/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/swarmshield/posttraining/benchmarks.py": {
+      "bytes": 2791,
+      "sha256": "82019216f7040a8baeb88a9823379902b06d5938228459f1c829addd419763e6"
+    },
+    "src/swarmshield/posttraining/data.py": {
+      "bytes": 8346,
+      "sha256": "07ee1023f707b4a50d96b5154ccd13ec6d0283e5f20b6a5955250e175e3e699e"
+    },
+    "src/swarmshield/posttraining/evaluation.py": {
+      "bytes": 923,
+      "sha256": "8119068b5c057bfda43ec8860444697958017d67fd3d0838201fb3982b554cfd"
+    },
+    "src/swarmshield/posttraining/model_loader.py": {
+      "bytes": 3544,
+      "sha256": "d523aea7d440278e68e9abec354d683420fd4284edd4f1536e60e882444554aa"
+    },
+    "src/swarmshield/posttraining/trainer.py": {
+      "bytes": 9476,
+      "sha256": "651d145402a092cc299ecacb6f7ace9cc45cf9cd7fe3262801bec692ea165d3d"
+    },
+    "tests/fixtures/prepared_manifest.json": {
+      "bytes": 3887,
+      "sha256": "36e5599aa176db3952952527a898d46525467707c32acc8ba7b8d537104b1796"
+    },
+    "tests/orbital_sft/pytest.ini": {
+      "bytes": 79,
+      "sha256": "45f76d0a458be02b8f7b4571507bce2306432cf6c50cbd266ca029a492b0a953"
+    },
+    "tests/orbital_sft/test_aggregation.py": {
+      "bytes": 2281,
+      "sha256": "17e7ecd7529c88f534d70932a271711602d148d5dfa8216f5248fa5b4b0aefd3"
+    },
+    "tests/orbital_sft/test_contact_transport.py": {
+      "bytes": 4026,
+      "sha256": "6e62c3e2acceaaa45bde06fa87f7b06945358884989c96fdca0ad79eee10fd27"
+    },
+    "tests/orbital_sft/test_contention_validation.py": {
+      "bytes": 2962,
+      "sha256": "a69a998a8092fff3a14bb7f1d2ddd0efcf07cc7b273a2a5b541f36dec32eb07c"
+    },
+    "tests/orbital_sft/test_continuation.py": {
+      "bytes": 3004,
+      "sha256": "f7e669de55a653bc4c741f88f39c5f17c9c73f6f25fac410fcaf05ca5983f8e2"
+    },
+    "tests/orbital_sft/test_feasibility.py": {
+      "bytes": 2512,
+      "sha256": "5133787e486fc9305bfe6988612eee07c6c9f74b3a9ccfbe96e1487451097b6f"
+    },
+    "tests/orbital_sft/test_masks.py": {
+      "bytes": 1640,
+      "sha256": "fd67e37f5df01508a1e0c0896a2bb8514bb312367da35b19351798de781bfd7e"
+    },
+    "tests/orbital_sft/test_mission_runner.py": {
+      "bytes": 7116,
+      "sha256": "9891894d09455916ee3dafb48717402c5b82879f8d2b82dcdbdb07b373abd782"
+    },
+    "tests/orbital_sft/test_outages.py": {
+      "bytes": 10112,
+      "sha256": "ace48c5c404381883b3258e6efad712c32c6bfd27e9d89e616b3b87bf05113d0"
+    },
+    "tests/orbital_sft/test_protocol.py": {
+      "bytes": 4143,
+      "sha256": "47dbbfaaf20e6c9864ad7d8dc97a39a227d4e12dc694f5633141cf73d6491cfa"
+    },
+    "tests/orbital_sft/test_recovery_state.py": {
+      "bytes": 3296,
+      "sha256": "b3a8eead9d48f6827519788fba97c12c06cdeb86269de90c17daea34ebe07123"
+    },
+    "tests/orbital_sft/test_reliable_transfer.py": {
+      "bytes": 4207,
+      "sha256": "da1353a4a7a28bfb995cfecc22dd7d2f3faeaf141372ae1fd3e82787481003f6"
+    },
+    "tests/orbital_sft/test_run_seeds.py": {
+      "bytes": 1440,
+      "sha256": "6476a6f3741bbf3b9e06cec40d27d5e5b762fdd7ab3c66a8ea766732442b546e"
+    },
+    "tests/orbital_sft/test_socket_transport.py": {
+      "bytes": 4034,
+      "sha256": "bc75b7ee1243194ea23e8f15831dd70e561c09ff2cd59d31d4b1ce7d4b773145"
+    },
+    "tests/orbital_sft/test_study_reporting.py": {
+      "bytes": 2886,
+      "sha256": "42cc1e1635831a064eae88d3a2b38a2b4f0ffdcf65ca1f7d928470a6fc3c6256"
+    },
+    "tests/orbital_sft/test_trainer_guards.py": {
+      "bytes": 881,
+      "sha256": "127a48fe48a5e7715104d17c64f71ae7940ad1d46d0fc9a5d27ee4636cce03a9"
+    }
+  }
+}

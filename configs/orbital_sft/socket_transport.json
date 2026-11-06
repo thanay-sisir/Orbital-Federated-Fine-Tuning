@@ -1,0 +1,14 @@
+{
+  "payload": "results/orbital/reference-22367142/round-0000/global_B.safetensors",
+  "clients": 5,
+  "rate_bps": 8000000,
+  "chunk_bytes": 262144,
+  "segment_bytes": 8192,
+  "rtt_seconds": 0.02,
+  "outage_seconds": 2.0,
+  "retry_seconds": 0.1,
+  "queue_bytes": 134217728,
+  "deadline_seconds": 30.0,
+  "timing_relative_tolerance": 0.25,
+  "timing_absolute_tolerance_seconds": 1.0
+}

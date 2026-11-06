@@ -1,0 +1,9 @@
+# Pilot data selection and attribution
+
+This configuration selects only `ai2-adapt-dev/oasst1_converted` from the pinned Tulu mixture. The [Tulu card](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) identifies OpenAssistant Guanaco as Apache 2.0; the [original OASST1 card](https://huggingface.co/datasets/OpenAssistant/oasst1) also declares Apache 2.0. Retain both source identities, original example IDs and the mixture's ODC-BY attribution. Cite Kopf et al., *OpenAssistant Conversations — Democratizing Large Language Model Alignment* (2023), and Lambert et al., *Tulu 3: Pushing Frontiers in Open Language Model Post-Training* (2024).
+
+All other mixture sources are excluded by default, including noncommercial sources. This is a conservative pilot selection based on publisher metadata, not a review of every underlying conversation's rights. Read the linked terms before redistributing data or adapters. Do not redistribute raw conversations in this repository.
+
+The mixture lists approximately 7,132 OpenAssistant examples before this project's text, length and mask filters. A 10,000-example target is an upper bound, not a guaranteed dataset size. This single-source pilot cannot demonstrate source-skew heterogeneity; expand the explicit allowlist only after documenting the additional subset terms here. Exact deduplication prevents identical conversations crossing local splits; benchmark contamination and shared prompt prefixes are not fully audited. Unknown overlap with original Qwen pretraining remains unknown.
+
+Model: [Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B), publisher-declared Apache 2.0. The pinned revision and candidate language target names are recorded in upstream_snapshot.json. Published support for inference is not evidence of successful NF4 training.

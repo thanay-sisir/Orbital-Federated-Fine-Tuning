@@ -1,0 +1,28 @@
+{
+  "payload": "results/orbital/reference-22367142/round-0000/global_B.safetensors",
+  "mission_seconds": 86400,
+  "replay_seconds": 240,
+  "slot_seconds": 0.25,
+  "processing_guard_seconds": 0.15,
+  "admission_lead_seconds": 0.003,
+  "timing_tolerance_seconds": 0.75,
+  "rate_bps": 64000000,
+  "chunk_bytes": 524288,
+  "segment_bytes": 8192,
+  "queue_bytes": 134217728,
+  "rtt_seconds": 0.002,
+  "outage_seconds": 0,
+  "retry_seconds": 0.02,
+  "cases": [
+    {
+      "name": "co-visible-no-outage-payload-control",
+      "geometry": 0,
+      "fault_seed": null,
+      "co_visible_stress": true,
+      "contacts": "results/orbital/outages-v1/cpu/geometry-0/contacts.json"
+    }
+  ],
+  "minimum_clients_with_verified_payload": 5,
+  "minimum_verified_bytes_per_client": 524288,
+  "reference_execution": "results/orbital/contact-transport-22525257/case-9/execution"
+}

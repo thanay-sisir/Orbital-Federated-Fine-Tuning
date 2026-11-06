@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "checks": {
+    "identical_logical_progress": true,
+    "identical_initial_adapter": true,
+    "same_config_source_environment": true,
+    "identical_link_reservations": true,
+    "one_record_per_round": true,
+    "two_declared_process_interruptions": true,
+    "saved_upload_chunks_reused": true,
+    "same_tensor_keys": true,
+    "fixed_A_exactly_equal": true,
+    "adapter_equal_within_tolerance": true,
+    "validation_loss_within_tolerance": true
+  },
+  "max_adapter_absolute_difference": 0.0,
+  "validation_loss_delta": 0.0,
+  "tolerances": {
+    "tensor_atol": 1e-06,
+    "tensor_rtol": 1e-05,
+    "validation_loss_atol": 0.0001
+  },
+  "gpu_array_allocated_hours_excluding_pilot": 2.948611111111111,
+  "scope": "Coordinator/receiver process recovery with mission-clock replay. No RF failure, power-loss, optimizer-step checkpoint or zero-overhead claim.",
+  "jobs": {
+    "cpu_job": "22486558",
+    "pilot_job": "22486756",
+    "gpu_array_job": "22486757",
+    "report_job": "22486758"
+  },
+  "runs": [
+    {
+      "name": "baseline",
+      "committed_rounds": 2,
+      "attempts": [
+        [
+          1,
+          "completed"
+        ]
+      ],
+      "durable_upload_chunks_reused": 0,
+      "process_outcomes": [
+        {
+          "attempt": 0,
+          "exit_code": 0
+        }
+      ],
+      "validation_loss": 1.434362427466698
+    },
+    {
+      "name": "interrupted",
+      "committed_rounds": 2,
+      "attempts": [
+        [
+          1,
+          "started"
+        ],
+        [
+          2,
+          "started"
+        ],
+        [
+          3,
+          "completed"
+        ]
+      ],
+      "durable_upload_chunks_reused": 1,
+      "process_outcomes": [
+        {
+          "attempt": 0,
+          "exit_code": 75
+        },
+        {
+          "attempt": 1,
+          "exit_code": 75
+        },
+        {
+          "attempt": 2,
+          "exit_code": 0
+        }
+      ],
+      "validation_loss": 1.434362427466698
+    }
+  ]
+}
