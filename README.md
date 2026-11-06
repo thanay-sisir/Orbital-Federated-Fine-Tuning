@@ -1,2 +1,2 @@
 # Orbital-Federated-Fine-Tuning
-Communication-Aware Federated Fine-Tuning for Satellite Networks
+Training a shared model across five GPUs under simulated satellite communication limits.
