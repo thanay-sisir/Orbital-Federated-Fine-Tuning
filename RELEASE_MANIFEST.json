@@ -18,8 +18,8 @@
       "sha256": "1da988b8e8edff4777cb657288655c0c874cea5873b7156063fb3951b557e8f8"
     },
     "README.md": {
-      "bytes": 4170,
-      "sha256": "a5296239c2527f6cf34da709ed39f45c61ad890a380e3c8c022c604a685de050"
+      "bytes": 4786,
+      "sha256": "5a6f69e6a902788ecd1a49e5aa2818a8a5ff9c4fffa005adb8eb2a9b4cb63766"
     },
     "configs/orbital_sft/compatibility.yaml": {
       "bytes": 4118,
