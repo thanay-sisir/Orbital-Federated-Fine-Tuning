@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#081525"/>
+<g font-family="DejaVu Sans, sans-serif">
+<text x="80" y="64" font-size="18" fill="#56dfd0" font-weight="700" text-anchor="start">WHEN A TRANSFER BREAKS</text>
+<text x="80" y="132" font-size="42" fill="#edf6ff" font-weight="700" text-anchor="start">Keep the verified work. Send only what is missing.</text>
+<text x="80" y="182" font-size="21" fill="#a5bad0" font-weight="400" text-anchor="start">How the saved-adapter transfer protocol handles an interruption.</text>
+<rect x="80.00" y="240.00" width="450.00" height="430.00" rx="12" fill="#10263d" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<rect x="575.00" y="240.00" width="450.00" height="430.00" rx="12" fill="#10263d" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<rect x="1070.00" y="240.00" width="450.00" height="430.00" rx="12" fill="#10263d" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="108" y="286" font-size="24" fill="#edf6ff" font-weight="700" text-anchor="start">01  First connection</text>
+<text x="108" y="326" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">Store each chunk after checking its hash.</text>
+<rect x="108.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="141" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">1</text>
+<rect x="187.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="220" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">2</text>
+<rect x="266.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#10263d" stroke="#58728a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="299" y="410" font-size="24" fill="#a5bad0" font-weight="700" text-anchor="middle">3</text>
+<rect x="345.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#10263d" stroke="#58728a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="378" y="410" font-size="24" fill="#a5bad0" font-weight="700" text-anchor="middle">4</text>
+<rect x="424.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#10263d" stroke="#58728a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="457" y="410" font-size="24" fill="#a5bad0" font-weight="700" text-anchor="middle">5</text>
+<text x="108" y="484" font-size="25" fill="#56dfd0" font-weight="700" text-anchor="start">2 verified chunks</text>
+<text x="108" y="524" font-size="19" fill="#a5bad0" font-weight="400" text-anchor="start">The payload is still incomplete.</text>
+<text x="108" y="572" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Each filled box is stored data.</text>
+<text x="603" y="286" font-size="24" fill="#edf6ff" font-weight="700" text-anchor="start">02  Connection breaks</text>
+<text x="603" y="326" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">Verified chunks remain at the receiver.</text>
+<rect x="603.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="636" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">1</text>
+<rect x="682.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="715" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">2</text>
+<rect x="761.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#10263d" stroke="#58728a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="794" y="410" font-size="24" fill="#a5bad0" font-weight="700" text-anchor="middle">3</text>
+<rect x="840.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#10263d" stroke="#58728a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="873" y="410" font-size="24" fill="#a5bad0" font-weight="700" text-anchor="middle">4</text>
+<rect x="919.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#10263d" stroke="#58728a" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="952" y="410" font-size="24" fill="#a5bad0" font-weight="700" text-anchor="middle">5</text>
+<text x="603" y="484" font-size="25" fill="#fa8d9b" font-weight="700" text-anchor="start">No restart from zero</text>
+<text x="603" y="524" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Resume the same transfer and version.</text>
+<text x="603" y="572" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Chunks 1 and 2 stay available.</text>
+<text x="1098" y="286" font-size="24" fill="#edf6ff" font-weight="700" text-anchor="start">03  Resume transfer</text>
+<text x="1098" y="326" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">Ask which chunks are still missing.</text>
+<rect x="1098.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="1131" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">1</text>
+<rect x="1177.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="1210" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">2</text>
+<rect x="1256.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="1289" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">3</text>
+<rect x="1335.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="1368" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">4</text>
+<rect x="1414.00" y="369.00" width="66.00" height="64.00" rx="12" fill="#56dfd0" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="1447" y="410" font-size="24" fill="#081525" font-weight="700" text-anchor="middle">5</text>
+<text x="1098" y="484" font-size="25" fill="#56dfd0" font-weight="700" text-anchor="start">Send chunks 3, 4 and 5</text>
+<text x="1098" y="524" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Verify the complete payload hash.</text>
+<text x="1098" y="572" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Check version before eligibility.</text>
+<line x1="535.00" y1="402.00" x2="561.00" y2="402.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<line x1="553.00" y1="394.00" x2="561.00" y2="402.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<line x1="553.00" y1="410.00" x2="561.00" y2="402.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<line x1="1030.00" y1="402.00" x2="1056.00" y2="402.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<line x1="1048.00" y1="394.00" x2="1056.00" y2="402.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<line x1="1048.00" y1="410.00" x2="1056.00" y2="402.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="80" y="731" font-size="23" fill="#edf6ff" font-weight="700" text-anchor="start">Confirmed in local TCP replay: resume observed; verified chunks were not retransmitted.</text>
+<text x="80" y="778" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Schematic sequence: five boxes illustrate the mechanism, not the measured chunk count or timing.</text>
+<text x="80" y="820" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Saved adapters were replayed on Earth. Partial data is not an accepted training update.</text>
+<text x="80" y="860" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">Corrupted chunks and stale versions are rejected; eligibility does not itself commit a training round.</text>
+</g></svg>

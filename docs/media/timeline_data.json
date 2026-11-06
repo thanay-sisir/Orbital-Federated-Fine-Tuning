@@ -1,0 +1,139 @@
+{
+  "scope": "One recorded client/round from the selected outage scenario; all times are simulated mission seconds. The transfer-recovery illustration is schematic, not a measured timeline.",
+  "client": 0,
+  "round_index": 2,
+  "policies": {
+    "fixed": {
+      "training_start": 41119.06258997777,
+      "training_finish": 41239.06258997777,
+      "steps": 4,
+      "upload_complete": false,
+      "arrival": null,
+      "verified_bytes": 6291456,
+      "payload_bytes": 6820712,
+      "chunks": [
+        {
+          "start": 41239.06258997777,
+          "finish": 41272.835565094356,
+          "arrival": 41272.835565094356,
+          "offset": 0,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41272.835565094356,
+          "finish": 41306.60854021094,
+          "arrival": 41306.60854021094,
+          "offset": 1048576,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41306.60854021094,
+          "finish": 41340.38151532752,
+          "arrival": 41340.38151532752,
+          "offset": 2097152,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41340.38151532752,
+          "finish": 41374.1544904441,
+          "arrival": 41374.1544904441,
+          "offset": 3145728,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41374.1544904441,
+          "finish": 41407.927465560686,
+          "arrival": 41407.927465560686,
+          "offset": 4194304,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41407.927465560686,
+          "finish": 41441.70044067727,
+          "arrival": 41441.70044067727,
+          "offset": 5242880,
+          "payload_bytes": 1048576
+        }
+      ],
+      "round_closed": 43200.0,
+      "round_participants": []
+    },
+    "feasible_fair": {
+      "training_start": 41119.06258997777,
+      "training_finish": 41179.06258997777,
+      "steps": 2,
+      "upload_complete": true,
+      "arrival": 41399.24466579385,
+      "verified_bytes": 6820712,
+      "payload_bytes": 6820712,
+      "chunks": [
+        {
+          "start": 41179.06258997777,
+          "finish": 41212.835565094356,
+          "arrival": 41212.835565094356,
+          "offset": 0,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41212.835565094356,
+          "finish": 41246.60854021094,
+          "arrival": 41246.60854021094,
+          "offset": 1048576,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41246.60854021094,
+          "finish": 41280.38151532752,
+          "arrival": 41280.38151532752,
+          "offset": 2097152,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41280.38151532752,
+          "finish": 41314.1544904441,
+          "arrival": 41314.1544904441,
+          "offset": 3145728,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41314.1544904441,
+          "finish": 41347.927465560686,
+          "arrival": 41347.927465560686,
+          "offset": 4194304,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41347.927465560686,
+          "finish": 41381.70044067727,
+          "arrival": 41381.70044067727,
+          "offset": 5242880,
+          "payload_bytes": 1048576
+        },
+        {
+          "start": 41381.70044067727,
+          "finish": 41399.24466579385,
+          "arrival": 41399.24466579385,
+          "offset": 6291456,
+          "payload_bytes": 529256
+        }
+      ],
+      "round_closed": 43200.0,
+      "round_participants": [
+        0,
+        2
+      ]
+    }
+  },
+  "sources": {
+    "results/orbital/outages-v1-fixed/events.jsonl": "98d56010d7db2778d3323adfc2c9984bd22001e084df579005a9857bec100b99",
+    "results/orbital/outages-v1-fixed/client_updates.jsonl": "f240d8b6efbef83a80547a17807777ab9c01f01431722a924a27891b34d9e181",
+    "results/orbital/outages-v1-feasible_fair/events.jsonl": "e23eba465669f035648214dc66a146b1b49b3d99112a0b94c37370bdd1b65e3a",
+    "results/orbital/outages-v1-feasible_fair/client_updates.jsonl": "58affbcf905b21b300a7c7a371a86a315ab06ae30c3f35eac3abf31863e89afd",
+    "docs/orbital_sft/evidence/socket_transport_results.json": "d5862945518ef8e2db7082b7d8819c5651459a368562050ef6f6b0ecbbed2270"
+  },
+  "recovery_checks": {
+    "recovery:client-0:verified_chunk_not_retransmitted": true,
+    "recovery:client-0:resume_observed": true,
+    "recovery:corruption_rejected": true
+  }
+}

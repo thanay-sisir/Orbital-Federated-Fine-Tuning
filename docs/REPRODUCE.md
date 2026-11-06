@@ -21,7 +21,7 @@ PYTHONPATH=src python -m pytest -c tests/orbital_sft/pytest.ini tests/orbital_sf
 
 Use separate environments for training, scoring and analysis. `infra/rivanna/environment/requirements-gpu.txt` records the training stack; `requirements-analysis.lock.txt` records the plotting/coordinate environment; `requirements-ifeval.txt` records the scorer dependencies. CUDA packages do not imply that a CPU test should allocate a GPU.
 
-## Regenerate the four public graphics
+## Regenerate the four result graphics
 
 In the separate analysis environment:
 
@@ -46,3 +46,5 @@ The Slurm templates are examples requiring local adaptation. Set your own accoun
 Numerical replay inputs and compact reports are included under `docs/orbital_sft/evidence/`. Model weights, raw conversations, generated answers, receiver databases, full run trees, machine-specific logs, caches, virtual environments and unrelated legacy code are excluded. Some scripts for full historical report collection require those separately staged artifacts; the small demos are the portable entry points.
 
 This is a focused export of the working project, with packaging and cluster-path portability changes. Tests construct their own synthetic protocol fixtures rather than depend on private HPC files. The CPU socket demo adds an explicit `--allow-local-cpu` option for standalone workstations; GPU allocation checks are unchanged. Historical experimental hashes refer to their recorded revisions. The public tree is not claimed to be byte-identical to every historical run. Release inventory and checks are recorded separately; new GPU claims require new execution evidence.
+
+The two additional transfer and scheduling diagrams have editable SVG sources, a sanitized trace extract and separate [rendering instructions](VISUALS.md).

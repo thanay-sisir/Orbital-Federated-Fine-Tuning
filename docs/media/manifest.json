@@ -8,6 +8,11 @@
     "docs/media/03_quality_tradeoffs.png": "718fdd30559e94ada2069c713b3766ab4831c2ec8c19860f99e0f040149eee0b",
     "docs/media/03_quality_tradeoffs.svg": "0a72c59a57c2b548c6639c6af4df199c1a730ad98e097da34c53988dd3b2aa90",
     "docs/media/04_recovery_and_transfers.png": "dc6329fcfa5b2e9d008632898ad53dea64f42d842e4fb2928d3e2d88bcc85406",
-    "docs/media/04_recovery_and_transfers.svg": "90332956097f8a4a05160df443f71be4a7ba121ad28b03dd5c1b4a9eb0541e56"
-  }
+    "docs/media/04_recovery_and_transfers.svg": "90332956097f8a4a05160df443f71be4a7ba121ad28b03dd5c1b4a9eb0541e56",
+    "docs/media/05_transfer_recovery.png": "e8c6f125e001d89204d681097eebe96f5481e81976d6fceda88d15616206fa9a",
+    "docs/media/05_transfer_recovery.svg": "f0654cef515c7eddadc7ce23f0c382cc55402e9d48caddb0cd46c91dc3dc3727",
+    "docs/media/06_scheduling_timeline.png": "497dc4cf23ca4918c3eca8ccea8d68284ae7264079cd546627b88f68875cb95f",
+    "docs/media/06_scheduling_timeline.svg": "f880a6b0d514e3a74d71b3ae09e3a032d5fd881a63b1b1f44267c60a5fed7bd2"
+  },
+  "timeline_data_sha256": "6344872b7ca042c24893201f16563e4e58706a825b4fa7a7b00b78992a577718"
 }

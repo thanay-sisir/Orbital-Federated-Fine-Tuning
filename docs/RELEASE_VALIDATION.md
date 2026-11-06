@@ -14,3 +14,5 @@ The export retains the small independent orbital reference checker and metadata-
 Packaging changes include a focused Python project definition, portable cluster-path handling, self-contained synthetic CPU fixtures and explicit standalone CPU opt-in for the socket demo. Historical scientific measurements refer to their archived source revisions. Reproducing GPU experiments on this release requires new staging and compatibility gates.
 
 The graphics use recorded quantities and include scenario limits, negative findings and the separation between real computation and simulated spacecraft conditions. They do not claim flight deployment, agency endorsement or demonstrated 100T-scale training.
+
+Two diagrams were added afterward: a schematic transfer-recovery sequence and a scheduling timeline from a sanitized recorded trace. Both PNG/SVG pairs were visually inspected; their source data, Markdown links and hashes were checked. The previous CPU test result above was not rerun for this documentation-only addition.

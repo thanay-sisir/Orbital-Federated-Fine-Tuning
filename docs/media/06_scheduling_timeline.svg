@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#081525"/>
+<g font-family="DejaVu Sans, sans-serif">
+<text x="80" y="64" font-size="18" fill="#56dfd0" font-weight="700" text-anchor="start">A RECORDED SCHEDULING DECISION</text>
+<text x="80" y="132" font-size="42" fill="#edf6ff" font-weight="700" text-anchor="start">Less local training. A complete upload.</text>
+<text x="80" y="182" font-size="21" fill="#a5bad0" font-weight="400" text-anchor="start">Same client and round: spending 60 fewer simulated seconds on training left room for the final chunk.</text>
+<rect x="80.00" y="230.00" width="1440.00" height="480.00" rx="12" fill="#10263d" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="112" y="270" font-size="20" fill="#a5bad0" font-weight="400" text-anchor="start">Client 0  /  round index 2  /  selected outage scenario</text>
+<text x="112" y="310" font-size="18" fill="#69a9ff" font-weight="700" text-anchor="start">Training</text>
+<text x="245" y="310" font-size="18" fill="#56dfd0" font-weight="700" text-anchor="start">Verified upload chunks</text>
+<line x1="350.00" y1="355.00" x2="350.00" y2="590.00" stroke="#29435a" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="350.0" y="635" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="middle">41,100</text>
+<line x1="568.75" y1="355.00" x2="568.75" y2="590.00" stroke="#29435a" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="568.75" y="635" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="middle">41,200</text>
+<line x1="787.50" y1="355.00" x2="787.50" y2="590.00" stroke="#29435a" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="787.5" y="635" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="middle">41,300</text>
+<line x1="1006.25" y1="355.00" x2="1006.25" y2="590.00" stroke="#29435a" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="1006.25" y="635" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="middle">41,400</text>
+<line x1="1225.00" y1="355.00" x2="1225.00" y2="590.00" stroke="#29435a" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="1225.0" y="635" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="middle">41,500</text>
+<text x="790" y="675" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="middle">Simulated mission time (seconds)</text>
+<text x="112" y="393" font-size="20" fill="#edf6ff" font-weight="700" text-anchor="start">Fixed scheduling</text>
+<text x="112" y="427" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">4 local optimizer steps</text>
+<rect x="391.70" y="364.00" width="262.50" height="46.00" rx="12" fill="#69a9ff" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<rect x="655.20" y="364.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="691.1386071101413" y="394" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">1</text>
+<rect x="729.08" y="364.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="765.0169901776655" y="394" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">2</text>
+<rect x="802.96" y="364.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="838.8953732451898" y="394" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">3</text>
+<rect x="876.83" y="364.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="912.7737563127141" y="394" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">4</text>
+<rect x="950.71" y="364.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="986.6521393802384" y="394" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">5</text>
+<rect x="1024.59" y="364.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="1060.5305224477627" y="394" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">6</text>
+<line x1="1097.47" y1="416.00" x2="1097.47" y2="433.00" stroke="#fa8d9b" stroke-width="2" stroke-dasharray=""/>
+<text x="1097.4697139815248" y="454" font-size="16" fill="#fa8d9b" font-weight="400" text-anchor="middle">41,441.7 s</text>
+<text x="1270" y="385" font-size="23" fill="#fa8d9b" font-weight="700" text-anchor="start">6 / 7 chunks</text>
+<text x="1270" y="421" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Incomplete</text>
+<text x="112" y="538" font-size="20" fill="#edf6ff" font-weight="700" text-anchor="start">Communication-aware</text>
+<text x="112" y="572" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">2 local optimizer steps</text>
+<rect x="391.70" y="509.00" width="131.25" height="46.00" rx="12" fill="#69a9ff" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<rect x="523.95" y="509.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="559.8886071101413" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">1</text>
+<rect x="597.83" y="509.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="633.7669901776655" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">2</text>
+<rect x="671.71" y="509.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="707.6453732451898" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">3</text>
+<rect x="745.58" y="509.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="781.5237563127141" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">4</text>
+<rect x="819.46" y="509.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="855.4021393802384" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">5</text>
+<rect x="893.34" y="509.00" width="71.88" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="929.2805224477627" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">6</text>
+<rect x="967.22" y="509.00" width="36.38" height="46.00" rx="12" fill="#56dfd0" stroke="none" stroke-width="2" stroke-dasharray=""/>
+<text x="985.4087102027847" y="539" font-size="19" fill="#081525" font-weight="700" text-anchor="middle">7</text>
+<line x1="1004.60" y1="561.00" x2="1004.60" y2="578.00" stroke="#56dfd0" stroke-width="2" stroke-dasharray=""/>
+<text x="1004.5977064240446" y="599" font-size="16" fill="#56dfd0" font-weight="400" text-anchor="middle">41,399.2 s</text>
+<text x="1270" y="530" font-size="23" fill="#56dfd0" font-weight="700" text-anchor="start">7 / 7 chunks</text>
+<text x="1270" y="566" font-size="18" fill="#a5bad0" font-weight="400" text-anchor="start">Upload complete</text>
+<text x="80" y="762" font-size="21" fill="#edf6ff" font-weight="700" text-anchor="start">Round outcome at 43,200 s: fixed accepted no clients; communication-aware accepted clients 0 and 2.</text>
+<text x="80" y="808" font-size="19" fill="#a5bad0" font-weight="400" text-anchor="start">This client contributed 2 accepted steps with communication-aware scheduling, versus 0 with fixed scheduling.</text>
+<text x="80" y="852" font-size="17" fill="#a5bad0" font-weight="400" text-anchor="start">One client and round, not a general speedup. GPU training was real; these communication and compute times were simulated.</text>
+</g></svg>
