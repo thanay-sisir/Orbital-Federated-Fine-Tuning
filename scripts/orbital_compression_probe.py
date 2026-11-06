@@ -45,7 +45,7 @@ def main():
         })
     atomic_json(output / "result.json", {
         "status": "completed", "results": results,
-        "scope": "CPU codec prototype on real saved B deltas; residual stays local and is not transmitted",
+        "scope": "CPU codec study on real saved B deltas; residual stays local and is not transmitted",
         "quality": "Not evaluated; historical updates were not trained using quantized aggregation",
         "code_sha256": digest(project_path("src/swarmshield/orbital/quantized_update.py")),
     })

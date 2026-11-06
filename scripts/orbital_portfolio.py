@@ -167,7 +167,7 @@ def make_figures(data):
     ax[1].set_ylim(0, 105)
     ax[1].set_title("Base 80/100; orbital 77/100; connected 76/100", fontsize=10)
 
-    ax = start("06_codec_prototype", "Int8 updates reduce serialized size in the CPU prototype", "All five archived clients · two sequential epoch deltas · numerical codec study; no compressed GPU learning-quality claim")
+    ax = start("06_codec_study", "Int8 updates reduce serialized size in the CPU codec study", "All five archived clients · two sequential epoch deltas · numerical codec study; no compressed GPU learning-quality claim")
     values = data["codec"]["results"]
     raw = np.mean([v["raw_serialized_bytes"] for v in values]) / 2**20
     quant = np.mean([v["int8_serialized_bytes"] for v in values]) / 2**20

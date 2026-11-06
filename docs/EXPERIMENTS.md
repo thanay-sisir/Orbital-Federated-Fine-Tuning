@@ -73,6 +73,6 @@ Recorded allocation scopes are 12.4333 GPU hours for the nine-run repeated study
 
 ## What the evidence does not establish
 
-There is no flight deployment, calibrated onboard compute/energy/thermal budget, physical RF link, inter-satellite network, authenticated adversarial-update protocol, 100-trillion-parameter experiment or general capability win. Checksums assume trusted manifests. Storage/process recovery tests do not emulate broken hardware or filesystem power loss. The code and measurements form a research prototype with explicit limits.
+There is no flight deployment, calibrated onboard compute/energy/thermal budget, physical RF link, inter-satellite network, authenticated adversarial-update protocol, 100-trillion-parameter experiment or general capability win. Checksums assume trusted manifests. Storage/process recovery tests do not emulate broken hardware or filesystem power loss. The code and measurements form a experimental framework with explicit limits.
 
 Numerical source data for the four public graphics is in [media/release_metrics.json](media/release_metrics.json). The release includes compact reports and replay inputs under `orbital_sft/evidence/`. Large run directories, model weights, datasets, generated answers and machine-specific logs are excluded.

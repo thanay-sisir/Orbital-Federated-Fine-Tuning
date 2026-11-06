@@ -18,8 +18,8 @@
       "sha256": "1da988b8e8edff4777cb657288655c0c874cea5873b7156063fb3951b557e8f8"
     },
     "README.md": {
-      "bytes": 4786,
-      "sha256": "5a6f69e6a902788ecd1a49e5aa2818a8a5ff9c4fffa005adb8eb2a9b4cb63766"
+      "bytes": 4790,
+      "sha256": "3459eee1a87ebc9020cf47f9b372cc9fe6b2d44be6da4927b870e1dce1339a00"
     },
     "configs/orbital_sft/compatibility.yaml": {
       "bytes": 4118,
@@ -170,8 +170,8 @@
       "sha256": "1ab851018e59f251f01655a6bcf007023a376deeef6d5652f5d10a38cad46a0e"
     },
     "docs/EXPERIMENTS.md": {
-      "bytes": 8956,
-      "sha256": "64042b6b984a3270c878f1fa6743f289086ec9c0efc1bb738d40c28e57541091"
+      "bytes": 8960,
+      "sha256": "1e682582e633fcb5d71f6ec3dc3175a482db4f92075c0dd7f85670b04da11425"
     },
     "docs/RELEASE_VALIDATION.md": {
       "bytes": 1720,
@@ -498,8 +498,8 @@
       "sha256": "7c763bd37b5c621f271c0c837533a4ab5b1a5f12ebd114b2a08391fb0b32274b"
     },
     "scripts/orbital_compression_probe.py": {
-      "bytes": 2632,
-      "sha256": "9bea94f36bae65c451d44b66f5e734b0cc3901d339e0477c5d5ea330ba1a58a3"
+      "bytes": 2628,
+      "sha256": "4525b155c38a14dc976b5d000f06bd15fd78fa74fe886e6205ad8a2e10088c9b"
     },
     "scripts/orbital_contact_report.py": {
       "bytes": 13817,
@@ -566,8 +566,8 @@
       "sha256": "7a9a63ee845d5e475a9439136b67752962f9d794a146559e06f3f7293d9005fa"
     },
     "scripts/orbital_portfolio.py": {
-      "bytes": 20232,
-      "sha256": "74c16f48cc569bb8bb26fb5a6ba1866a977715fe11af379ed72120261cdedc25"
+      "bytes": 20230,
+      "sha256": "371b8695eb3d788d1012bd764d137233d8daf080964de87edd959ee94b054fd9"
     },
     "scripts/orbital_recovery_demo.py": {
       "bytes": 5993,
